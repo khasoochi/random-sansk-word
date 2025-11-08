@@ -41,6 +41,5 @@ Thumbs.db
 # Logs
 *.log
 
-# Generated files (can be regenerated from source)
-sanskrit_dictionary.json
-sanskrit_dictionary.csv
+# Note: sanskrit_dictionary.json is committed for Vercel deployment
+# Run parse_dictionaries.py to regenerate if needed
