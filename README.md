@@ -57,6 +57,44 @@ python3 app.py
 
 The application will be available at: `http://localhost:5000`
 
+## Deployment
+
+### Deploying to Vercel
+
+This app is configured for easy deployment to Vercel:
+
+1. **Push to GitHub** (already done if you cloned this repo)
+
+2. **Import to Vercel**:
+   - Go to [vercel.com](https://vercel.com)
+   - Click "Import Project"
+   - Select your GitHub repository
+   - Vercel will automatically detect the Python/Flask setup
+
+3. **Configuration**:
+   - The `vercel.json` file is already configured
+   - No environment variables needed
+   - The dictionary JSON (20MB) is included in the repository
+
+4. **Deploy**:
+   - Click "Deploy"
+   - Vercel will build and deploy your app
+   - You'll get a live URL like: `your-app.vercel.app`
+
+5. **Health Check**:
+   - Visit `/health` endpoint to verify deployment
+   - Check dictionary loaded status and file system info
+
+**Note**: The `sanskrit_dictionary.json` file (20MB) is committed to the repository for Vercel deployment. If you need to regenerate it, run `python3 parse_dictionaries.py`.
+
+### Troubleshooting Vercel Deployment
+
+If the deployment fails:
+1. Check the `/health` endpoint for diagnostic information
+2. Review Vercel build logs for errors
+3. Ensure the dictionary JSON file is present in the deployment
+4. Verify Python version compatibility (Python 3.9+ recommended)
+
 ## Usage
 
 1. Open your web browser and navigate to `http://localhost:5000`
