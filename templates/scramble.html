@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Word Scramble{% endblock %}
+{% block content %}
+<header class="page-header">
+    <h1 class="sanskrit-title small">व्यत्यास शब्द</h1>
+    <p class="description">Tap the shuffled aksharas in the right order to rebuild the word. Tap an answer tile to undo it.</p>
+</header>
+
+<div class="game-hint-box">
+    <div><span class="hint-tag">EN</span> <span id="hintEn">Loading…</span></div>
+    <div><span class="hint-tag">HI</span> <span id="hintHi" class="hindi-text"></span></div>
+</div>
+
+<div id="scrambleMessage" class="game-message"></div>
+
+<div class="scramble-answer" id="scrambleAnswer"></div>
+<div class="scramble-bank" id="scrambleBank"></div>
+
+<div class="game-controls">
+    <button id="checkScramble" class="btn-primary">Check</button>
+    <button id="resetScramble" class="btn-secondary">Reset</button>
+    <button id="giveUpScramble" class="btn-secondary">Give Up</button>
+    <button id="newScramble" class="btn-secondary">New Word</button>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/scramble.js') }}"></script>
+{% endblock %}

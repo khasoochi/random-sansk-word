@@ -1,63 +1,38 @@
-// Main application JavaScript
+// Random word generator page
 
 document.addEventListener('DOMContentLoaded', function() {
     const generateBtn = document.getElementById('generateBtn');
     const wordCountInput = document.getElementById('wordCount');
     const resultsContainer = document.getElementById('results');
     const loadingDiv = document.getElementById('loading');
-    const statsDiv = document.getElementById('stats');
 
-    // Load stats on page load
     loadStats();
-
-    // Generate button click handler
     generateBtn.addEventListener('click', generateWords);
-
-    // Allow Enter key to generate
     wordCountInput.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
-            generateWords();
-        }
+        if (e.key === 'Enter') generateWords();
     });
-
-    // Load initial words
     generateWords();
 
     async function loadStats() {
         try {
             const response = await fetch('/api/stats');
             const data = await response.json();
-
             if (data.total_words) {
                 document.getElementById('totalWords').textContent =
                     `${data.total_words.toLocaleString()} words available`;
-                document.getElementById('dbCount').textContent =
-                    data.total_words.toLocaleString();
-
-                // Display gender distribution
-                if (data.gender_distribution) {
-                    const genderInfo = Object.entries(data.gender_distribution)
-                        .map(([gender, count]) => `${gender}: ${count}`)
-                        .join(', ');
-                    console.log('Gender distribution:', genderInfo);
-                }
             }
         } catch (error) {
-            console.error('Error loading stats:', error);
-            document.getElementById('totalWords').textContent = 'Error loading stats';
+            document.getElementById('totalWords').textContent = 'Stats unavailable';
         }
     }
 
     async function generateWords() {
         const count = parseInt(wordCountInput.value) || 5;
-
-        // Validate input
         if (count < 1 || count > 100) {
             alert('Please enter a number between 1 and 100');
             return;
         }
 
-        // Show loading state
         loadingDiv.style.display = 'block';
         resultsContainer.innerHTML = '';
         generateBtn.disabled = true;
@@ -65,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
         try {
             const response = await fetch(`/api/random?count=${count}`);
             const data = await response.json();
-
             if (data.success) {
                 displayWords(data.words);
             } else {
@@ -81,70 +55,36 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function displayWords(words) {
         resultsContainer.innerHTML = '';
-
         words.forEach((word, index) => {
-            const card = createWordCard(word, index);
-            resultsContainer.appendChild(card);
+            resultsContainer.appendChild(createWordCard(word, index));
         });
-
-        // Scroll to results smoothly
-        if (words.length > 0) {
-            setTimeout(() => {
-                resultsContainer.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }, 100);
-        }
     }
 
     function createWordCard(word, index) {
         const card = document.createElement('div');
         card.className = 'word-card';
-        card.style.animationDelay = `${index * 0.1}s`;
-
+        card.style.animationDelay = `${index * 0.06}s`;
         const genderClass = `gender-${word.gender.toLowerCase()}`;
-
-        // Truncate meanings for initial display
-        const englishMeaning = truncateText(word.english_meaning, 200);
-        const hindiMeaning = truncateText(word.hindi_meaning, 200);
 
         card.innerHTML = `
             <div class="word-header">
                 <div class="sanskrit-word">${escapeHtml(word.sanskrit)}</div>
                 <span class="gender-badge ${genderClass}">${escapeHtml(word.gender)}</span>
             </div>
-
+            <div class="roman-word">${escapeHtml(word.roman || '')}</div>
             <div class="meaning-section">
-                <div class="meaning-label">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                    </svg>
-                    English Meaning
-                </div>
-                <div class="meaning-text" id="english-${index}">
-                    ${escapeHtml(englishMeaning)}
-                </div>
+                <div class="meaning-label">English Meaning</div>
+                <div class="meaning-text">${escapeHtml(truncateText(word.english_meaning, 220))}</div>
             </div>
-
             <div class="meaning-section">
-                <div class="meaning-label">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                    </svg>
-                    हिन्दी अर्थ
-                </div>
-                <div class="meaning-text hindi-text" id="hindi-${index}">
-                    ${escapeHtml(hindiMeaning)}
-                </div>
+                <div class="meaning-label">हिन्दी अर्थ</div>
+                <div class="meaning-text hindi-text">${escapeHtml(truncateText(word.hindi_meaning, 220))}</div>
             </div>
         `;
 
-        // Add expand functionality if there are multiple meanings
         if (word.all_english_meanings && word.all_english_meanings.length > 1) {
             addExpandButton(card, word, index);
         }
-
         return card;
     }
 
@@ -156,37 +96,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
         expandBtn.addEventListener('click', function() {
             if (!expanded) {
-                // Show all meanings
                 const additionalDiv = document.createElement('div');
                 additionalDiv.className = 'additional-meanings';
                 additionalDiv.id = `additional-${index}`;
 
                 if (word.all_english_meanings.length > 1) {
-                    const engList = document.createElement('ul');
-                    word.all_english_meanings.forEach(meaning => {
-                        const li = document.createElement('li');
-                        li.textContent = meaning;
-                        engList.appendChild(li);
-                    });
-
                     const engLabel = document.createElement('strong');
                     engLabel.textContent = 'All English Meanings:';
                     additionalDiv.appendChild(engLabel);
+                    const engList = document.createElement('ul');
+                    word.all_english_meanings.forEach(m => {
+                        const li = document.createElement('li');
+                        li.textContent = m;
+                        engList.appendChild(li);
+                    });
                     additionalDiv.appendChild(engList);
                 }
 
                 if (word.all_hindi_meanings.length > 1) {
-                    const hindiList = document.createElement('ul');
-                    hindiList.className = 'hindi-text';
-                    word.all_hindi_meanings.forEach(meaning => {
-                        const li = document.createElement('li');
-                        li.textContent = meaning;
-                        hindiList.appendChild(li);
-                    });
-
                     const hindiLabel = document.createElement('strong');
                     hindiLabel.textContent = 'सभी हिन्दी अर्थ:';
                     additionalDiv.appendChild(hindiLabel);
+                    const hindiList = document.createElement('ul');
+                    hindiList.className = 'hindi-text';
+                    word.all_hindi_meanings.forEach(m => {
+                        const li = document.createElement('li');
+                        li.textContent = m;
+                        hindiList.appendChild(li);
+                    });
                     additionalDiv.appendChild(hindiList);
                 }
 
@@ -194,11 +131,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 expandBtn.textContent = '- Show less';
                 expanded = true;
             } else {
-                // Hide additional meanings
                 const additionalDiv = document.getElementById(`additional-${index}`);
-                if (additionalDiv) {
-                    additionalDiv.remove();
-                }
+                if (additionalDiv) additionalDiv.remove();
                 expandBtn.textContent = '+ Show all meanings';
                 expanded = false;
             }
@@ -208,9 +142,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function truncateText(text, maxLength) {
-        if (text.length <= maxLength) {
-            return text;
-        }
+        if (!text) return '';
+        if (text.length <= maxLength) return text;
         return text.substring(0, maxLength) + '...';
     }
 
@@ -221,19 +154,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function showError(message) {
-        resultsContainer.innerHTML = `
-            <div style="
-                padding: 30px;
-                background: #fee;
-                border-left: 5px solid #e74c3c;
-                border-radius: 10px;
-                color: #c0392b;
-                font-weight: 500;
-                text-align: center;
-                grid-column: 1 / -1;
-            ">
-                <strong>Error:</strong> ${escapeHtml(message)}
-            </div>
-        `;
+        resultsContainer.innerHTML = `<div class="error-box">${escapeHtml(message)}</div>`;
     }
 });

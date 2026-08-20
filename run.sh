@@ -10,6 +10,13 @@ echo ""
 if [ ! -f "sanskrit_dictionary.json" ]; then
     echo "📚 Dictionary files not found. Parsing Babylon dictionaries..."
     python3 parse_dictionaries.py
+    python3 enrich_dictionary.py
+    echo ""
+fi
+
+if [ ! -f "puzzles/wordle.json" ]; then
+    echo "🧩 Puzzle files not found. Generating word games..."
+    python3 generate_puzzles.py
     echo ""
 fi
 

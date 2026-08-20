@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Learn — संस्कृत शब्दकोश{% endblock %}
+{% block content %}
+<header class="page-header">
+    <h1 class="sanskrit-title small">शब्द अभ्यास</h1>
+    <p class="description">Tap the card to reveal the meaning, then move to the next word.</p>
+</header>
+
+<div class="flashcard-wrap">
+    <div class="flashcard" id="flashcard">
+        <div class="flashcard-inner">
+            <div class="flashcard-face flashcard-front">
+                <div class="flash-deva" id="flashDeva">…</div>
+                <div class="flash-roman" id="flashRoman"></div>
+                <div class="flash-tap-hint">Tap to reveal meaning</div>
+            </div>
+            <div class="flashcard-face flashcard-back">
+                <div class="flash-deva small" id="flashDevaBack">…</div>
+                <span class="gender-badge" id="flashGender"></span>
+                <div class="meaning-section">
+                    <div class="meaning-label">English Meaning</div>
+                    <div class="meaning-text" id="flashEnglish"></div>
+                </div>
+                <div class="meaning-section">
+                    <div class="meaning-label">हिन्दी अर्थ</div>
+                    <div class="meaning-text hindi-text" id="flashHindi"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flashcard-controls">
+        <span class="stats" id="learnCount">Card 1</span>
+        <button id="nextBtn" class="btn-primary">Next Word →</button>
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/learn.js') }}"></script>
+{% endblock %}

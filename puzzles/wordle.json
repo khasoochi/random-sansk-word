@@ -1,0 +1,586 @@
+[
+  {
+    "id": "wl0000",
+    "word": "सोष्मन्",
+    "roman": "soshman",
+    "aksharas": [
+      "सो",
+      "ष्म",
+      "न्"
+    ],
+    "length": 3,
+    "gender": "adjective",
+    "hint_en": "Warm, hot",
+    "hint_hi": "गरम, तप्त"
+  },
+  {
+    "id": "wl0001",
+    "word": "व्यभिचारिन्",
+    "roman": "vyabhichaarin",
+    "aksharas": [
+      "व्य",
+      "भि",
+      "चा",
+      "रि",
+      "न्"
+    ],
+    "length": 5,
+    "gender": "adjective",
+    "hint_en": "Straying or deviating from, going astray, erring, trespassing",
+    "hint_hi": "भटका हुआ, भूला हुआ, पथभ्रष्ट, भ्रान्त, नियम भंग करने वाला"
+  },
+  {
+    "id": "wl0002",
+    "word": "तारल",
+    "roman": "taarala",
+    "aksharas": [
+      "ता",
+      "र",
+      "ल"
+    ],
+    "length": 3,
+    "gender": "masculine",
+    "hint_en": "Unsteady",
+    "hint_hi": "कामुक, लम्पट, विषयी"
+  },
+  {
+    "id": "wl0003",
+    "word": "प्रस्फुरित",
+    "roman": "prasphurita",
+    "aksharas": [
+      "प्र",
+      "स्फु",
+      "रि",
+      "त"
+    ],
+    "length": 4,
+    "gender": "unknown",
+    "hint_en": "Quivering, trembling",
+    "hint_hi": "ठिठुरता हुआ, कांपता हुआ, थरथराता हुआ, कम्पायमान"
+  },
+  {
+    "id": "wl0004",
+    "word": "अविदूषक",
+    "roman": "aviduushaka",
+    "aksharas": [
+      "अ",
+      "वि",
+      "दू",
+      "ष",
+      "क"
+    ],
+    "length": 5,
+    "gender": "adjective",
+    "hint_en": "Innocent",
+    "hint_hi": "निरीह, भोलाभाला"
+  },
+  {
+    "id": "wl0005",
+    "word": "मादन",
+    "roman": "maadana",
+    "aksharas": [
+      "मा",
+      "द",
+      "न"
+    ],
+    "length": 3,
+    "gender": "masculine",
+    "hint_en": "Intoxicating &c.",
+    "hint_hi": "जलकुक्कुट"
+  },
+  {
+    "id": "wl0006",
+    "word": "पत्रिका",
+    "roman": "patrikaa",
+    "aksharas": [
+      "प",
+      "त्रि",
+      "का"
+    ],
+    "length": 3,
+    "gender": "feminine",
+    "hint_en": "A leaf for writing upon",
+    "hint_hi": "लिखने के लिए काग़ज"
+  },
+  {
+    "id": "wl0007",
+    "word": "उपशिक्षा",
+    "roman": "upashikshaa",
+    "aksharas": [
+      "उ",
+      "प",
+      "शि",
+      "क्षा"
+    ],
+    "length": 4,
+    "gender": "feminine",
+    "hint_en": "क्षणम् Learning, training",
+    "hint_hi": "अधिगम, सीखना, प्रशिक्षण"
+  },
+  {
+    "id": "wl0008",
+    "word": "उच्छासन",
+    "roman": "uchchhaasana",
+    "aksharas": [
+      "उ",
+      "च्छा",
+      "स",
+      "न"
+    ],
+    "length": 4,
+    "gender": "adjective",
+    "hint_en": "Not amenable to rule or command, ungovernable, unruly. उच्छास्त्र, °reeवर्तिन् a",
+    "hint_hi": "नियंत्रण में न रहने वाला, निरंकुश, उद्दंड"
+  },
+  {
+    "id": "wl0009",
+    "word": "प्रगल्भ",
+    "roman": "pragalbha",
+    "aksharas": [
+      "प्र",
+      "ग",
+      "ल्भ"
+    ],
+    "length": 3,
+    "gender": "adjective",
+    "hint_en": "Bold, confident",
+    "hint_hi": "साहसी, भरोसा करने वाला"
+  },
+  {
+    "id": "wl0010",
+    "word": "चातुरक्ष",
+    "roman": "chaaturaksha",
+    "aksharas": [
+      "चा",
+      "तु",
+      "र",
+      "क्ष"
+    ],
+    "length": 4,
+    "gender": "masculine",
+    "hint_en": "Four casts in playing at dice. -क्षः A small round pillow",
+    "hint_hi": "चौपड़ या चार पासों के खेल में चार का दाँव"
+  },
+  {
+    "id": "wl0011",
+    "word": "मीवर",
+    "roman": "miivara",
+    "aksharas": [
+      "मी",
+      "व",
+      "र"
+    ],
+    "length": 3,
+    "gender": "masculine",
+    "hint_en": "Hurtful, injurious",
+    "hint_hi": "सेना का नायक, सेनाध्यक्ष"
+  },
+  {
+    "id": "wl0012",
+    "word": "नवत",
+    "roman": "navata",
+    "aksharas": [
+      "न",
+      "व",
+      "त"
+    ],
+    "length": 3,
+    "gender": "adjective",
+    "hint_en": "Ninetieth",
+    "hint_hi": "नव्वेवाँ"
+  },
+  {
+    "id": "wl0013",
+    "word": "अर्थवत्",
+    "roman": "arthavat",
+    "aksharas": [
+      "अ",
+      "र्थ",
+      "व",
+      "त्"
+    ],
+    "length": 4,
+    "gender": "adjective",
+    "hint_en": "Wealthy, rich",
+    "hint_hi": "धनवान"
+  },
+  {
+    "id": "wl0014",
+    "word": "वेधन",
+    "roman": "vedhana",
+    "aksharas": [
+      "वे",
+      "ध",
+      "न"
+    ],
+    "length": 3,
+    "gender": "masculine",
+    "hint_en": "The act of piercing, perforating",
+    "hint_hi": "छेदने या बींधने की क्रिया"
+  },
+  {
+    "id": "wl0015",
+    "word": "अग्नायी",
+    "roman": "agnaayii",
+    "aksharas": [
+      "अ",
+      "ग्ना",
+      "यी"
+    ],
+    "length": 3,
+    "gender": "feminine",
+    "hint_en": "the wife of Agni and Goddess of Fire, Svāhā. She is said to be the daughter of Dakṣa",
+    "hint_hi": "अग्नि की पत्नी, अग्नि देवी, स्वाहा"
+  },
+  {
+    "id": "wl0016",
+    "word": "निर्वेध",
+    "roman": "nirvedha",
+    "aksharas": [
+      "नि",
+      "र्वे",
+      "ध"
+    ],
+    "length": 3,
+    "gender": "masculine",
+    "hint_en": "Penetration",
+    "hint_hi": "अन्दर घुस जाना"
+  },
+  {
+    "id": "wl0017",
+    "word": "अपराक्",
+    "roman": "aparaak",
+    "aksharas": [
+      "अ",
+      "प",
+      "रा",
+      "क्"
+    ],
+    "length": 4,
+    "gender": "indeclinable",
+    "hint_en": "In (or to) the western direction. शयीत नापराक् नान्यैर्न नग्ना न च सन्ध्ययोः Bhāg.6.18.51",
+    "hint_hi": "के सामने"
+  },
+  {
+    "id": "wl0018",
+    "word": "प्रभ्रंश्",
+    "roman": "prabhramsh",
+    "aksharas": [
+      "प्र",
+      "भ्रं",
+      "श्"
+    ],
+    "length": 3,
+    "gender": "unknown",
+    "hint_en": "Ā., 4 P. To fall or drop down, slip",
+    "hint_hi": "गिरना, टपकना,फिसलना"
+  },
+  {
+    "id": "wl0019",
+    "word": "अजानिक",
+    "roman": "ajaanika",
+    "aksharas": [
+      "अ",
+      "जा",
+      "नि",
+      "क"
+    ],
+    "length": 4,
+    "gender": "masculine",
+    "hint_en": "A goat-herd",
+    "hint_hi": "गडरिया, बकरियों का व्यापारी"
+  },
+  {
+    "id": "wl0020",
+    "word": "सस्मित",
+    "roman": "sasmita",
+    "aksharas": [
+      "स",
+      "स्मि",
+      "त"
+    ],
+    "length": 3,
+    "gender": "masculine",
+    "hint_en": "Smiling, attended with a smile",
+    "hint_hi": "मुस्कराहट के साथ, सविलक्षस्मितम् आदि"
+  },
+  {
+    "id": "wl0021",
+    "word": "सांवादिक",
+    "roman": "saamvaadika",
+    "aksharas": [
+      "सां",
+      "वा",
+      "दि",
+      "क"
+    ],
+    "length": 4,
+    "gender": "adjective",
+    "hint_en": "Colloquial",
+    "hint_hi": "(बोलचाल में) प्रचलित"
+  },
+  {
+    "id": "wl0022",
+    "word": "निर्लोच्य",
+    "roman": "nirlochya",
+    "aksharas": [
+      "नि",
+      "र्लो",
+      "च्य"
+    ],
+    "length": 3,
+    "gender": "adjective",
+    "hint_en": "Having meditated, pondered",
+    "hint_hi": "सोचविचार कर"
+  },
+  {
+    "id": "wl0023",
+    "word": "अनुमात्रा",
+    "roman": "anumaatraa",
+    "aksharas": [
+      "अ",
+      "नु",
+      "मा",
+      "त्रा"
+    ],
+    "length": 4,
+    "gender": "feminine",
+    "hint_en": "Determination, resolution",
+    "hint_hi": "प्रस्ताव, संकल्प"
+  },
+  {
+    "id": "wl0024",
+    "word": "तेजस्वत्",
+    "roman": "tejasvat",
+    "aksharas": [
+      "ते",
+      "ज",
+      "स्व",
+      "त्"
+    ],
+    "length": 4,
+    "gender": "adjective",
+    "hint_en": "Bright, brilliant, splendid",
+    "hint_hi": "उज्ज्वल, चमकीला, शानदार"
+  },
+  {
+    "id": "wl0025",
+    "word": "वापन",
+    "roman": "vaapana",
+    "aksharas": [
+      "वा",
+      "प",
+      "न"
+    ],
+    "length": 3,
+    "gender": "masculine",
+    "hint_en": "Causing to sow",
+    "hint_hi": "बुवाना"
+  },
+  {
+    "id": "wl0026",
+    "word": "अभ्यान्त",
+    "roman": "abhyaanta",
+    "aksharas": [
+      "अ",
+      "भ्या",
+      "न्त"
+    ],
+    "length": 3,
+    "gender": "unknown",
+    "hint_en": "See under अभ्यम्",
+    "hint_hi": "रोगी,बीमार"
+  },
+  {
+    "id": "wl0027",
+    "word": "धूमायति",
+    "roman": "dhuumaayati",
+    "aksharas": [
+      "धू",
+      "मा",
+      "य",
+      "ति"
+    ],
+    "length": 4,
+    "gender": "unknown",
+    "hint_en": "To cover or fill with smoke, vapour &c., darken",
+    "hint_hi": "धूएँ से भर देना, वाष्प से ढक देना, अँधेरा करना"
+  },
+  {
+    "id": "wl0028",
+    "word": "अवेक्षक",
+    "roman": "avekshaka",
+    "aksharas": [
+      "अ",
+      "वे",
+      "क्ष",
+      "क"
+    ],
+    "length": 4,
+    "gender": "adjective",
+    "hint_en": "Showing, showing all round",
+    "hint_hi": "निरीक्षण करने वाला, देखरेख करने वाला, अधोक्षक ।"
+  },
+  {
+    "id": "wl0029",
+    "word": "अभ्यसूयक",
+    "roman": "abhyasuuyaka",
+    "aksharas": [
+      "अ",
+      "भ्य",
+      "सू",
+      "य",
+      "क"
+    ],
+    "length": 5,
+    "gender": "adjective",
+    "hint_en": "Jealous, envious",
+    "hint_hi": "ईर्ष्याल,डाहभरा,निन्दक,कलंक लगाने वाला"
+  },
+  {
+    "id": "wl0030",
+    "word": "शुश्रूषु",
+    "roman": "shushruushu",
+    "aksharas": [
+      "शु",
+      "श्रू",
+      "षु"
+    ],
+    "length": 3,
+    "gender": "adjective",
+    "hint_en": "Desirous to hear",
+    "hint_hi": "सुनने का इच्छुक"
+  },
+  {
+    "id": "wl0031",
+    "word": "पिष्टक",
+    "roman": "pishtaka",
+    "aksharas": [
+      "पि",
+      "ष्ट",
+      "क"
+    ],
+    "length": 3,
+    "gender": "masculine",
+    "hint_en": "कम् 1 A cake made of the flour of any grain",
+    "hint_hi": "बाटी जो किसी अनाज के आटे से बनाई गई हो"
+  },
+  {
+    "id": "wl0032",
+    "word": "उन्नह्",
+    "roman": "unnah",
+    "aksharas": [
+      "उ",
+      "न्न",
+      "ह्"
+    ],
+    "length": 3,
+    "gender": "unknown",
+    "hint_en": "To tie up, bind up, fasten round",
+    "hint_hi": "बांधना, जकड़ना, गूंथना"
+  },
+  {
+    "id": "wl0033",
+    "word": "उपस्तम्भ",
+    "roman": "upastambha",
+    "aksharas": [
+      "उ",
+      "प",
+      "स्त",
+      "म्भ"
+    ],
+    "length": 4,
+    "gender": "masculine",
+    "hint_en": "म्भनम् 1 Stay, support",
+    "hint_hi": "टेक, सहारा"
+  },
+  {
+    "id": "wl0034",
+    "word": "विश्वसनीय",
+    "roman": "vishvasaniiya",
+    "aksharas": [
+      "वि",
+      "श्व",
+      "स",
+      "नी",
+      "य"
+    ],
+    "length": 5,
+    "gender": "adjective",
+    "hint_en": "To be relied upon, trustworthy, reliable",
+    "hint_hi": "विश्वास् किये जाने के योग्य, विश्वासपात्र, जिस पर भरोसा किया जा सके"
+  },
+  {
+    "id": "wl0035",
+    "word": "आक्षिक",
+    "roman": "aakshika",
+    "aksharas": [
+      "आ",
+      "क्षि",
+      "क"
+    ],
+    "length": 3,
+    "gender": "adjective",
+    "hint_en": "One who plays at dice. -One who uses loaded dice.",
+    "hint_hi": "पासों से जूआ खेलने वाला"
+  },
+  {
+    "id": "wl0036",
+    "word": "अप्रत्यय",
+    "roman": "apratyaya",
+    "aksharas": [
+      "अ",
+      "प्र",
+      "त्य",
+      "य"
+    ],
+    "length": 4,
+    "gender": "adjective",
+    "hint_en": "Diffident, distrustful (with loc.)",
+    "hint_hi": "आत्मविश्वास रहित,अविश्वासी"
+  },
+  {
+    "id": "wl0037",
+    "word": "आलग्न",
+    "roman": "aalagna",
+    "aksharas": [
+      "आ",
+      "ल",
+      "ग्न"
+    ],
+    "length": 3,
+    "gender": "adjective",
+    "hint_en": "Adhered, clung to",
+    "hint_hi": "पालन करता हुआ, चिपका हुआ, अनुषक्त"
+  },
+  {
+    "id": "wl0038",
+    "word": "अविवेक",
+    "roman": "aviveka",
+    "aksharas": [
+      "अ",
+      "वि",
+      "वे",
+      "क"
+    ],
+    "length": 4,
+    "gender": "adjective",
+    "hint_en": "Wanting in judgment or discrimination, thoughtless",
+    "hint_hi": "व्चारशून्य, विवेकशून्य"
+  },
+  {
+    "id": "wl0039",
+    "word": "उत्स्रोतस्",
+    "roman": "utsrotas",
+    "aksharas": [
+      "उ",
+      "त्स्रो",
+      "त",
+      "स्"
+    ],
+    "length": 4,
+    "gender": "adjective",
+    "hint_en": "Having the flow (of life) upward",
+    "hint_hi": "ऊपर की ओर रुझान रखने वाला"
+  }
+]

@@ -1,0 +1,1614 @@
+[
+  {
+    "rows": 7,
+    "cols": 5,
+    "words": [
+      {
+        "number": 1,
+        "direction": "down",
+        "row": 0,
+        "col": 3,
+        "length": 2,
+        "aksharas": [
+          "चा",
+          "र्म"
+        ],
+        "word": "चार्म",
+        "roman": "chaarma",
+        "clue_en": "Leathern",
+        "clue_hi": "चमड़े का बना हुआ"
+      },
+      {
+        "number": 2,
+        "direction": "down",
+        "row": 1,
+        "col": 2,
+        "length": 3,
+        "aksharas": [
+          "भ",
+          "ञ्ज",
+          "रु"
+        ],
+        "word": "भञ्जरु",
+        "roman": "bhanyjaru",
+        "clue_en": "A tree growing near a temple",
+        "clue_hi": "मन्दिर के पास उगा हुआ वृक्ष"
+      },
+      {
+        "number": 2,
+        "direction": "across",
+        "row": 1,
+        "col": 2,
+        "length": 3,
+        "aksharas": [
+          "भ",
+          "र्म",
+          "ण्या"
+        ],
+        "word": "भर्मण्या",
+        "roman": "bharmanyaa",
+        "clue_en": "Wages, hire",
+        "clue_hi": "मजदूरी, भाड़ा"
+      },
+      {
+        "number": 3,
+        "direction": "across",
+        "row": 3,
+        "col": 1,
+        "length": 3,
+        "aksharas": [
+          "गा",
+          "रु",
+          "ड"
+        ],
+        "word": "गारुड",
+        "roman": "gaaruda",
+        "clue_en": "Shaped like Garuḍa",
+        "clue_hi": "गरुड़ की शक्ल का बना हुआ"
+      },
+      {
+        "number": 3,
+        "direction": "down",
+        "row": 3,
+        "col": 1,
+        "length": 4,
+        "aksharas": [
+          "गा",
+          "ढा",
+          "व",
+          "टी"
+        ],
+        "word": "गाढावटी",
+        "roman": "gaadhaavatii",
+        "clue_en": "A kind of Indian chess",
+        "clue_hi": "एक प्रकार की भारतीय शतरंज"
+      },
+      {
+        "number": 4,
+        "direction": "across",
+        "row": 5,
+        "col": 0,
+        "length": 4,
+        "aksharas": [
+          "अ",
+          "व",
+          "सृ",
+          "ज्"
+        ],
+        "word": "अवसृज्",
+        "roman": "avasrij",
+        "clue_en": "To throw or cast down, pour out, let fall, drop",
+        "clue_hi": "डालना, फेंकना, बोना, बखेरना"
+      }
+    ],
+    "id": "cw0000"
+  },
+  {
+    "rows": 9,
+    "cols": 8,
+    "words": [
+      {
+        "number": 1,
+        "direction": "across",
+        "row": 0,
+        "col": 4,
+        "length": 3,
+        "aksharas": [
+          "वि",
+          "च",
+          "न्द्र"
+        ],
+        "word": "विचन्द्र",
+        "roman": "vichandra",
+        "clue_en": "Moonless (as a night)",
+        "clue_hi": "चन्द्रहीन,चन्द्रमा से रहित"
+      },
+      {
+        "number": 2,
+        "direction": "down",
+        "row": 0,
+        "col": 5,
+        "length": 5,
+        "aksharas": [
+          "च",
+          "म",
+          "क",
+          "सू",
+          "क्त"
+        ],
+        "word": "चमकसूक्त",
+        "roman": "chamakasuukta",
+        "clue_en": "The hymn containing च मे",
+        "clue_hi": "वेद का एक सूक्त जिसके प्रत्येक मन्त्र में ‘चम’ की आवृत्ति की जाती है"
+      },
+      {
+        "number": 3,
+        "direction": "across",
+        "row": 2,
+        "col": 5,
+        "length": 3,
+        "aksharas": [
+          "क",
+          "ण्ठि",
+          "का"
+        ],
+        "word": "कण्ठिका",
+        "roman": "kanthikaa",
+        "clue_en": "A necklace of a single string or row",
+        "clue_hi": "एक लड़ का हार या माला"
+      },
+      {
+        "number": 4,
+        "direction": "down",
+        "row": 2,
+        "col": 7,
+        "length": 3,
+        "aksharas": [
+          "का",
+          "णे",
+          "ली"
+        ],
+        "word": "काणेली",
+        "roman": "kaanelii",
+        "clue_en": "An unchaste or faithless woman",
+        "clue_hi": "असती या व्यभिचारिणी स्त्री"
+      },
+      {
+        "number": 5,
+        "direction": "down",
+        "row": 3,
+        "col": 3,
+        "length": 5,
+        "aksharas": [
+          "उ",
+          "प",
+          "धू",
+          "पि",
+          "त"
+        ],
+        "word": "उपधूपित",
+        "roman": "upadhuupita",
+        "clue_en": "Fumigated",
+        "clue_hi": "धूनी दिया गया"
+      },
+      {
+        "number": 6,
+        "direction": "across",
+        "row": 4,
+        "col": 2,
+        "length": 4,
+        "aksharas": [
+          "उ",
+          "प",
+          "र",
+          "क्त"
+        ],
+        "word": "उपरक्त",
+        "roman": "uparakta",
+        "clue_en": "Afflicted, overtaken by calamity, distressed",
+        "clue_hi": "कष्ट-ग्रस्त, संकटग्रस्त, दुःखी"
+      },
+      {
+        "number": 7,
+        "direction": "across",
+        "row": 7,
+        "col": 0,
+        "length": 4,
+        "aksharas": [
+          "अ",
+          "धि",
+          "ग",
+          "त"
+        ],
+        "word": "अधिगत",
+        "roman": "adhigata",
+        "clue_en": "Acquired, obtained &c.",
+        "clue_hi": "अर्जित, प्राप्त आदि"
+      },
+      {
+        "number": 7,
+        "direction": "down",
+        "row": 7,
+        "col": 0,
+        "length": 2,
+        "aksharas": [
+          "अ",
+          "क्ता"
+        ],
+        "word": "अक्ता",
+        "roman": "aktaa",
+        "clue_en": "Night; कृष्णेभिरक्तोषाः Rv.1.62. 8",
+        "clue_hi": "रात"
+      }
+    ],
+    "id": "cw0001"
+  },
+  {
+    "rows": 5,
+    "cols": 7,
+    "words": [
+      {
+        "number": 1,
+        "direction": "across",
+        "row": 0,
+        "col": 3,
+        "length": 2,
+        "aksharas": [
+          "नि",
+          "धा"
+        ],
+        "word": "निधा",
+        "roman": "nidhaa",
+        "clue_en": "To place, put, put or set down",
+        "clue_hi": "रखना, धरना, जड़ देना"
+      },
+      {
+        "number": 2,
+        "direction": "down",
+        "row": 0,
+        "col": 4,
+        "length": 3,
+        "aksharas": [
+          "धा",
+          "र",
+          "क"
+        ],
+        "word": "धारक",
+        "roman": "dhaaraka",
+        "clue_en": "Holding, possessing, bearing &c.",
+        "clue_hi": "किसी प्रकार का बर्तन, जलपात्र"
+      },
+      {
+        "number": 3,
+        "direction": "down",
+        "row": 0,
+        "col": 6,
+        "length": 3,
+        "aksharas": [
+          "ओ",
+          "क",
+          "ण"
+        ],
+        "word": "ओकण",
+        "roman": "okana",
+        "clue_en": "A bug; so ओकोदनी, ओक्कणी",
+        "clue_hi": "खटमल"
+      },
+      {
+        "number": 4,
+        "direction": "down",
+        "row": 1,
+        "col": 2,
+        "length": 3,
+        "aksharas": [
+          "उ",
+          "पा",
+          "सा"
+        ],
+        "word": "उपासा",
+        "roman": "upaasaa",
+        "clue_en": "Service, attendance",
+        "clue_hi": "सेवा, हाजरी"
+      },
+      {
+        "number": 5,
+        "direction": "across",
+        "row": 1,
+        "col": 4,
+        "length": 3,
+        "aksharas": [
+          "र",
+          "सि",
+          "क"
+        ],
+        "word": "रसिक",
+        "roman": "rasika",
+        "clue_en": "Savoury, sapid, tasteful",
+        "clue_hi": "मसालेदार, मज़ेदार, स्वादिष्ट"
+      },
+      {
+        "number": 6,
+        "direction": "across",
+        "row": 2,
+        "col": 2,
+        "length": 3,
+        "aksharas": [
+          "पा",
+          "ल",
+          "क"
+        ],
+        "word": "पालक",
+        "roman": "paalaka",
+        "clue_en": "A guardian, protector",
+        "clue_hi": "अभिभावक, प्ररक्षक"
+      },
+      {
+        "number": 7,
+        "direction": "across",
+        "row": 3,
+        "col": 0,
+        "length": 3,
+        "aksharas": [
+          "वि",
+          "भा",
+          "सा"
+        ],
+        "word": "विभासा",
+        "roman": "vibhaasaa",
+        "clue_en": "Light, lustre",
+        "clue_hi": "प्रकाश, कान्ति, आभा"
+      },
+      {
+        "number": 8,
+        "direction": "down",
+        "row": 3,
+        "col": 1,
+        "length": 2,
+        "aksharas": [
+          "भा",
+          "ष्य"
+        ],
+        "word": "भाष्य",
+        "roman": "bhaashya",
+        "clue_en": "Speaking, talking",
+        "clue_hi": "बोलना, बातें करना"
+      }
+    ],
+    "id": "cw0002"
+  },
+  {
+    "rows": 7,
+    "cols": 9,
+    "words": [
+      {
+        "number": 1,
+        "direction": "down",
+        "row": 0,
+        "col": 7,
+        "length": 4,
+        "aksharas": [
+          "प",
+          "रि",
+          "णि",
+          "ष्ठा"
+        ],
+        "word": "परिणिष्ठा",
+        "roman": "parinishthaa",
+        "clue_en": "Perfect skill",
+        "clue_hi": "पूरा कौशल"
+      },
+      {
+        "number": 2,
+        "direction": "down",
+        "row": 1,
+        "col": 4,
+        "length": 3,
+        "aksharas": [
+          "अ",
+          "ध",
+          "स्"
+        ],
+        "word": "अधस्",
+        "roman": "adhas",
+        "clue_en": "Below, down",
+        "clue_hi": "तले, नीचे, निम्नप्रदेश मे, नारकीय प्रदेशों में या नरक में"
+      },
+      {
+        "number": 2,
+        "direction": "across",
+        "row": 1,
+        "col": 4,
+        "length": 5,
+        "aksharas": [
+          "अ",
+          "भि",
+          "सा",
+          "रि",
+          "न्"
+        ],
+        "word": "अभिसारिन्",
+        "roman": "abhisaarin",
+        "clue_en": "Going to meet, visiting",
+        "clue_hi": "मिलने,दर्शन करने,आक्रमण करने,जाने वाला"
+      },
+      {
+        "number": 3,
+        "direction": "down",
+        "row": 2,
+        "col": 2,
+        "length": 2,
+        "aksharas": [
+          "भी",
+          "मा"
+        ],
+        "word": "भीमा",
+        "roman": "bhiimaa",
+        "clue_en": "An epithet of Durgā",
+        "clue_hi": "दुर्गा का विशेषण"
+      },
+      {
+        "number": 4,
+        "direction": "across",
+        "row": 3,
+        "col": 1,
+        "length": 4,
+        "aksharas": [
+          "स",
+          "मा",
+          "श्व",
+          "स्"
+        ],
+        "word": "समाश्वस्",
+        "roman": "samaashvas",
+        "clue_en": "To take courage, take heart, calm or compose oneself",
+        "clue_hi": "साहसी होना, हिम्मत बांधना, ढाढस रखना"
+      },
+      {
+        "number": 4,
+        "direction": "down",
+        "row": 3,
+        "col": 1,
+        "length": 4,
+        "aksharas": [
+          "स",
+          "मा",
+          "वा",
+          "य"
+        ],
+        "word": "समावाय",
+        "roman": "samaavaaya",
+        "clue_en": "Association, connection",
+        "clue_hi": "साहचर्य, संबंध"
+      },
+      {
+        "number": 5,
+        "direction": "down",
+        "row": 3,
+        "col": 3,
+        "length": 2,
+        "aksharas": [
+          "श्व",
+          "ल्"
+        ],
+        "word": "श्वल्",
+        "roman": "shval",
+        "clue_en": "To run, go quickly",
+        "clue_hi": "दौड़ना, फुर्ती से जाना"
+      },
+      {
+        "number": 6,
+        "direction": "across",
+        "row": 5,
+        "col": 0,
+        "length": 3,
+        "aksharas": [
+          "सै",
+          "वा",
+          "ल"
+        ],
+        "word": "सैवाल",
+        "roman": "saivaala",
+        "clue_en": "शेवाल",
+        "clue_hi": "मोथे की भांति हरे रंग का पदार्थ जो पानी के ऊपर उग आता है, काई"
+      }
+    ],
+    "id": "cw0003"
+  },
+  {
+    "rows": 8,
+    "cols": 6,
+    "words": [
+      {
+        "number": 1,
+        "direction": "down",
+        "row": 0,
+        "col": 2,
+        "length": 4,
+        "aksharas": [
+          "अ",
+          "ध्या",
+          "सि",
+          "त"
+        ],
+        "word": "अध्यासित",
+        "roman": "adhyaasita",
+        "clue_en": "Seated down, upon, settled. -तम् Sitting upon",
+        "clue_hi": "बैठा हुआ, बसा हुआ"
+      },
+      {
+        "number": 1,
+        "direction": "across",
+        "row": 0,
+        "col": 2,
+        "length": 3,
+        "aksharas": [
+          "अ",
+          "या",
+          "ज्य"
+        ],
+        "word": "अयाज्य",
+        "roman": "ayaajya",
+        "clue_en": "for whom one must not perform sacrifices, not competent to offer sacrifices (as a Śūdra &c.)",
+        "clue_hi": "जिसके लिये यज्ञ नहीं करना चाहिये,या जो यज्ञ का अधिकारी न हो"
+      },
+      {
+        "number": 2,
+        "direction": "down",
+        "row": 1,
+        "col": 5,
+        "length": 3,
+        "aksharas": [
+          "क्ष",
+          "रि",
+          "न्"
+        ],
+        "word": "क्षरिन्",
+        "roman": "ksharin",
+        "clue_en": "The rainy season",
+        "clue_hi": "बरसात का मौसम"
+      },
+      {
+        "number": 3,
+        "direction": "across",
+        "row": 3,
+        "col": 1,
+        "length": 5,
+        "aksharas": [
+          "आ",
+          "त",
+          "ता",
+          "यि",
+          "न्"
+        ],
+        "word": "आततायिन्",
+        "roman": "aatataayin",
+        "clue_en": "or s. [आततेन विस्तीर्णेन शस्त्रादिना अयितुं शीलमस्य Tv.]",
+        "clue_hi": "किसी का वध करने के लिए प्रयत्नशील, साहसी"
+      },
+      {
+        "number": 4,
+        "direction": "down",
+        "row": 3,
+        "col": 3,
+        "length": 3,
+        "aksharas": [
+          "ता",
+          "जि",
+          "क"
+        ],
+        "word": "ताजिक",
+        "roman": "taajika",
+        "clue_en": "A Persian",
+        "clue_hi": "मध्यवर्ती एशिया में रहने वाली एक जाति"
+      },
+      {
+        "number": 5,
+        "direction": "across",
+        "row": 5,
+        "col": 1,
+        "length": 3,
+        "aksharas": [
+          "पा",
+          "नि",
+          "क"
+        ],
+        "word": "पानिक",
+        "roman": "paanika",
+        "clue_en": "A vendor of spirituous liquors, a distiller",
+        "clue_hi": "शराब-बिक्रेता, कलाल"
+      },
+      {
+        "number": 6,
+        "direction": "down",
+        "row": 5,
+        "col": 2,
+        "length": 3,
+        "aksharas": [
+          "नि",
+          "बु",
+          "ध्"
+        ],
+        "word": "निबुध्",
+        "roman": "nibudh",
+        "clue_en": "To know, understand, learn",
+        "clue_hi": "जानना, समझना, ज्ञात करना"
+      },
+      {
+        "number": 7,
+        "direction": "across",
+        "row": 7,
+        "col": 0,
+        "length": 3,
+        "aksharas": [
+          "आ",
+          "बा",
+          "ध्"
+        ],
+        "word": "आबाध्",
+        "roman": "aabaadh",
+        "clue_en": "To check, rein in, restrain",
+        "clue_hi": "दुःख देना, सताना"
+      }
+    ],
+    "id": "cw0004"
+  },
+  {
+    "rows": 9,
+    "cols": 9,
+    "words": [
+      {
+        "number": 1,
+        "direction": "down",
+        "row": 0,
+        "col": 6,
+        "length": 4,
+        "aksharas": [
+          "अ",
+          "ना",
+          "ल",
+          "म्ब"
+        ],
+        "word": "अनालम्ब",
+        "roman": "anaalamba",
+        "clue_en": "Without support or stay",
+        "clue_hi": "असहाय,अवलंबहीन"
+      },
+      {
+        "number": 1,
+        "direction": "across",
+        "row": 0,
+        "col": 6,
+        "length": 3,
+        "aksharas": [
+          "अ",
+          "भ",
+          "क्ति"
+        ],
+        "word": "अभक्ति",
+        "roman": "abhakti",
+        "clue_en": "Want of devotion or attachment",
+        "clue_hi": "भक्ति या आसक्ति का अभाव"
+      },
+      {
+        "number": 2,
+        "direction": "down",
+        "row": 2,
+        "col": 4,
+        "length": 4,
+        "aksharas": [
+          "पु",
+          "रो",
+          "हि",
+          "त"
+        ],
+        "word": "पुरोहित",
+        "roman": "purohita",
+        "clue_en": "Placed in front",
+        "clue_hi": "सामने रक्खा हुआ"
+      },
+      {
+        "number": 2,
+        "direction": "across",
+        "row": 2,
+        "col": 4,
+        "length": 3,
+        "aksharas": [
+          "पु",
+          "द्ग",
+          "ल"
+        ],
+        "word": "पुद्गल",
+        "roman": "pudgala",
+        "clue_en": "Beautiful, lovely, handsome",
+        "clue_hi": "सुन्दर, प्रिय, मनोहर"
+      },
+      {
+        "number": 3,
+        "direction": "down",
+        "row": 4,
+        "col": 2,
+        "length": 5,
+        "aksharas": [
+          "अ",
+          "वि",
+          "का",
+          "रि",
+          "न्"
+        ],
+        "word": "अविकारिन्",
+        "roman": "avikaarin",
+        "clue_en": "Unchangeable, invariable",
+        "clue_hi": "जिसमें कोई परिवर्तन न हो"
+      },
+      {
+        "number": 4,
+        "direction": "down",
+        "row": 5,
+        "col": 0,
+        "length": 4,
+        "aksharas": [
+          "आ",
+          "जी",
+          "वि",
+          "का"
+        ],
+        "word": "आजीविका",
+        "roman": "aajiivikaa",
+        "clue_en": "Profession, means of subsistence",
+        "clue_hi": "पेशा, जीवन निर्वाह का साधन, वृत्ति"
+      },
+      {
+        "number": 5,
+        "direction": "across",
+        "row": 5,
+        "col": 2,
+        "length": 3,
+        "aksharas": [
+          "वि",
+          "धृ",
+          "त"
+        ],
+        "word": "विधृत",
+        "roman": "vidhrita",
+        "clue_en": "Seized, held, grasped",
+        "clue_hi": "पकड़ा हुआ, थामा हुआ, ग्रहण किया हुआ"
+      },
+      {
+        "number": 6,
+        "direction": "across",
+        "row": 7,
+        "col": 0,
+        "length": 4,
+        "aksharas": [
+          "वि",
+          "चा",
+          "रि",
+          "त"
+        ],
+        "word": "विचारित",
+        "roman": "vichaarita",
+        "clue_en": "Considered, inquired into, examined, discussed",
+        "clue_hi": "सोचा गया, पूछताछ की गई, परीक्षा की गई, विचारविमर्श, किया गया"
+      }
+    ],
+    "id": "cw0005"
+  },
+  {
+    "rows": 7,
+    "cols": 8,
+    "words": [
+      {
+        "number": 1,
+        "direction": "down",
+        "row": 0,
+        "col": 5,
+        "length": 5,
+        "aksharas": [
+          "अ",
+          "भि",
+          "मा",
+          "नि",
+          "न्"
+        ],
+        "word": "अभिमानिन्",
+        "roman": "abhimaanin",
+        "clue_en": "Possessed of self-respect",
+        "clue_hi": "आत्माभिमानी"
+      },
+      {
+        "number": 1,
+        "direction": "across",
+        "row": 0,
+        "col": 5,
+        "length": 3,
+        "aksharas": [
+          "अ",
+          "नु",
+          "भू"
+        ],
+        "word": "अनुभू",
+        "roman": "anubhuu",
+        "clue_en": "To enjoy",
+        "clue_hi": "मजे लेना, अनुभव करना, महसूस करना, भोगना"
+      },
+      {
+        "number": 2,
+        "direction": "down",
+        "row": 2,
+        "col": 3,
+        "length": 4,
+        "aksharas": [
+          "द्रा",
+          "ह्या",
+          "य",
+          "ण"
+        ],
+        "word": "द्राह्यायण",
+        "roman": "draahyaayana",
+        "clue_en": "of a sage, the author of the Kalpasūtras dealing with the singing of the Sāmaveda",
+        "clue_hi": "सामवेदियों के सम्प्रदाय के लिए लिखित श्रौतसूत्र के कर्ता का नाम"
+      },
+      {
+        "number": 3,
+        "direction": "across",
+        "row": 3,
+        "col": 5,
+        "length": 3,
+        "aksharas": [
+          "नि",
+          "ष्ठु",
+          "र"
+        ],
+        "word": "निष्ठुर",
+        "roman": "nishthura",
+        "clue_en": "Hard, rugged, coarse, rough",
+        "clue_hi": "कठोर, कर्कश, उजड्ड, रूखा"
+      },
+      {
+        "number": 4,
+        "direction": "down",
+        "row": 3,
+        "col": 7,
+        "length": 2,
+        "aksharas": [
+          "र",
+          "स्"
+        ],
+        "word": "रस्",
+        "roman": "ras",
+        "clue_en": "To roar, yell, cry out, scream",
+        "clue_hi": "दहाड़ना, हूहू करना, चिल्लना, चीखना"
+      },
+      {
+        "number": 5,
+        "direction": "across",
+        "row": 4,
+        "col": 3,
+        "length": 3,
+        "aksharas": [
+          "य",
+          "ति",
+          "न्"
+        ],
+        "word": "यतिन्",
+        "roman": "yatin",
+        "clue_en": "An ascetic",
+        "clue_hi": "संन्यासी"
+      },
+      {
+        "number": 6,
+        "direction": "across",
+        "row": 5,
+        "col": 0,
+        "length": 4,
+        "aksharas": [
+          "सं",
+          "स्म",
+          "र",
+          "ण"
+        ],
+        "word": "संस्मरण",
+        "roman": "samsmarana",
+        "clue_en": "Remembering, calling to mind",
+        "clue_hi": "याद करना, मन में लाना"
+      },
+      {
+        "number": 7,
+        "direction": "down",
+        "row": 5,
+        "col": 2,
+        "length": 2,
+        "aksharas": [
+          "र",
+          "थ्या"
+        ],
+        "word": "रथ्या",
+        "roman": "rathyaa",
+        "clue_en": "A road for carriages",
+        "clue_hi": "गाड़ियों के आने जाने के लिए सड़क, राजमार्ग, मुख्य सड़क"
+      }
+    ],
+    "id": "cw0006"
+  },
+  {
+    "rows": 7,
+    "cols": 7,
+    "words": [
+      {
+        "number": 1,
+        "direction": "across",
+        "row": 0,
+        "col": 0,
+        "length": 4,
+        "aksharas": [
+          "शि",
+          "ञ्ज",
+          "ञ्जि",
+          "का"
+        ],
+        "word": "शिञ्जञ्जिका",
+        "roman": "shinyjanyjikaa",
+        "clue_en": "A chain worn round the loins",
+        "clue_hi": "कटिबंध, करधनी"
+      },
+      {
+        "number": 2,
+        "direction": "down",
+        "row": 0,
+        "col": 3,
+        "length": 4,
+        "aksharas": [
+          "का",
+          "ल्या",
+          "ण",
+          "क"
+        ],
+        "word": "काल्याणक",
+        "roman": "kaalyaanaka",
+        "clue_en": "Auspiciousness",
+        "clue_hi": "मांगल्य, शुभ"
+      },
+      {
+        "number": 3,
+        "direction": "down",
+        "row": 2,
+        "col": 5,
+        "length": 3,
+        "aksharas": [
+          "अ",
+          "र्थि",
+          "क"
+        ],
+        "word": "अर्थिक",
+        "roman": "arthika",
+        "clue_en": "A crier, watchman",
+        "clue_hi": "चिल्लाने वाला,चौकीदार"
+      },
+      {
+        "number": 4,
+        "direction": "across",
+        "row": 3,
+        "col": 1,
+        "length": 3,
+        "aksharas": [
+          "शू",
+          "द्र",
+          "क"
+        ],
+        "word": "शूद्रक",
+        "roman": "shuudraka",
+        "clue_en": "of a king, the reputed author of the Mṛichchhakaṭika",
+        "clue_hi": "एक राजा , मृच्छकटिक का प्रख्यात प्रणेता"
+      },
+      {
+        "number": 5,
+        "direction": "down",
+        "row": 3,
+        "col": 2,
+        "length": 3,
+        "aksharas": [
+          "द्र",
+          "ष्ट",
+          "व्य"
+        ],
+        "word": "द्रष्टव्य",
+        "roman": "drashtavya",
+        "clue_en": "To be seen, visible",
+        "clue_hi": "देखे जाने के योग्य, जो दिखलाई दे सके"
+      },
+      {
+        "number": 6,
+        "direction": "down",
+        "row": 4,
+        "col": 4,
+        "length": 3,
+        "aksharas": [
+          "ए",
+          "क",
+          "धा"
+        ],
+        "word": "एकधा",
+        "roman": "ekadhaa",
+        "clue_en": "In one way",
+        "clue_hi": "एक प्रकार से,"
+      },
+      {
+        "number": 6,
+        "direction": "across",
+        "row": 4,
+        "col": 4,
+        "length": 3,
+        "aksharas": [
+          "ए",
+          "क",
+          "दा"
+        ],
+        "word": "एकदा",
+        "roman": "ekadaa",
+        "clue_en": "Once, once upon a time, at one time",
+        "clue_hi": "एक बार, एक दफा, एक समय"
+      },
+      {
+        "number": 7,
+        "direction": "across",
+        "row": 5,
+        "col": 1,
+        "length": 4,
+        "aksharas": [
+          "अ",
+          "व्य",
+          "ली",
+          "क"
+        ],
+        "word": "अव्यलीक",
+        "roman": "avyaliika",
+        "clue_en": "Not false, true",
+        "clue_hi": "जो झूठा न हो,सच्चा"
+      }
+    ],
+    "id": "cw0007"
+  },
+  {
+    "rows": 7,
+    "cols": 7,
+    "words": [
+      {
+        "number": 1,
+        "direction": "down",
+        "row": 0,
+        "col": 6,
+        "length": 3,
+        "aksharas": [
+          "नि",
+          "यु",
+          "ज्"
+        ],
+        "word": "नियुज्",
+        "roman": "niyuj",
+        "clue_en": "To appoint, depute, order (with loc.) यन्मां विधेयविषये स भवान्नियुङ्क्ते Māl.1.9",
+        "clue_hi": "नियुक्त करना, प्रतिनियुक्त करना, आदेश देना"
+      },
+      {
+        "number": 2,
+        "direction": "down",
+        "row": 1,
+        "col": 4,
+        "length": 3,
+        "aksharas": [
+          "दै",
+          "नि",
+          "की"
+        ],
+        "word": "दैनिकी",
+        "roman": "dainikii",
+        "clue_en": "Daily wages, day's hire",
+        "clue_hi": "प्रतिदिन की मजदूरी, दिनभर की उजरत, दिहाड़ी"
+      },
+      {
+        "number": 3,
+        "direction": "down",
+        "row": 2,
+        "col": 2,
+        "length": 2,
+        "aksharas": [
+          "मू",
+          "ला"
+        ],
+        "word": "मूला",
+        "roman": "muulaa",
+        "clue_en": "of a plant",
+        "clue_hi": "एक पौधे का नाम, सतावर"
+      },
+      {
+        "number": 4,
+        "direction": "across",
+        "row": 2,
+        "col": 4,
+        "length": 3,
+        "aksharas": [
+          "नि",
+          "र्णि",
+          "ज्"
+        ],
+        "word": "निर्णिज्",
+        "roman": "nirnij",
+        "clue_en": "To wash, clean, purify: अम्बुनिर्णिक्तम् Y.1.191",
+        "clue_hi": "धोना, निर्मल करना,स्वच्छ करना"
+      },
+      {
+        "number": 5,
+        "direction": "across",
+        "row": 3,
+        "col": 2,
+        "length": 3,
+        "aksharas": [
+          "ला",
+          "स",
+          "की"
+        ],
+        "word": "लासकी",
+        "roman": "laasakii",
+        "clue_en": "A female dancer",
+        "clue_hi": "नर्तकी"
+      },
+      {
+        "number": 6,
+        "direction": "down",
+        "row": 3,
+        "col": 3,
+        "length": 3,
+        "aksharas": [
+          "स",
+          "प्त",
+          "म"
+        ],
+        "word": "सप्तम",
+        "roman": "saptama",
+        "clue_en": "The seventh. -मी f",
+        "clue_hi": "सातवां"
+      },
+      {
+        "number": 7,
+        "direction": "across",
+        "row": 5,
+        "col": 0,
+        "length": 4,
+        "aksharas": [
+          "वि",
+          "नि",
+          "य",
+          "म"
+        ],
+        "word": "विनियम",
+        "roman": "viniyama",
+        "clue_en": "Control, restraint, check",
+        "clue_hi": "नियन्त्रण, प्रतिबन्ध, रोक"
+      },
+      {
+        "number": 7,
+        "direction": "down",
+        "row": 5,
+        "col": 0,
+        "length": 2,
+        "aksharas": [
+          "वि",
+          "स्था"
+        ],
+        "word": "विस्था",
+        "roman": "visthaa",
+        "clue_en": "To stand apart",
+        "clue_hi": "अलग खड़े होना"
+      }
+    ],
+    "id": "cw0008"
+  },
+  {
+    "rows": 9,
+    "cols": 6,
+    "words": [
+      {
+        "number": 1,
+        "direction": "down",
+        "row": 0,
+        "col": 3,
+        "length": 4,
+        "aksharas": [
+          "प्र",
+          "व",
+          "य",
+          "ण"
+        ],
+        "word": "प्रवयण",
+        "roman": "pravayana",
+        "clue_en": "The upper part of a piece of woven cloth",
+        "clue_hi": "बुने हुए कपड़े का ऊपर का भाग"
+      },
+      {
+        "number": 2,
+        "direction": "down",
+        "row": 0,
+        "col": 5,
+        "length": 3,
+        "aksharas": [
+          "स्प",
+          "न्दि",
+          "त"
+        ],
+        "word": "स्पन्दित",
+        "roman": "spandita",
+        "clue_en": "Throbbed,quivered",
+        "clue_hi": "थरथरीयुक्त, ठिठुरा हुआ"
+      },
+      {
+        "number": 3,
+        "direction": "across",
+        "row": 1,
+        "col": 1,
+        "length": 3,
+        "aksharas": [
+          "अ",
+          "भा",
+          "व"
+        ],
+        "word": "अभाव",
+        "roman": "abhaava",
+        "clue_en": "Without love or affection. कच्चिन्ना- भिहतो$भावैः शब्दादिभिरमङ्गलैः Bhāg.1.14.4",
+        "clue_hi": "न होना,अनस्तित्व"
+      },
+      {
+        "number": 4,
+        "direction": "across",
+        "row": 2,
+        "col": 3,
+        "length": 3,
+        "aksharas": [
+          "य",
+          "न्त्रि",
+          "त"
+        ],
+        "word": "यन्त्रित",
+        "roman": "yantrita",
+        "clue_en": "Restrained, checked, curbed, controlled, confined",
+        "clue_hi": "भड़काया हुआ"
+      },
+      {
+        "number": 5,
+        "direction": "across",
+        "row": 3,
+        "col": 1,
+        "length": 3,
+        "aksharas": [
+          "श्रा",
+          "व",
+          "ण"
+        ],
+        "word": "श्रावण",
+        "roman": "shraavana",
+        "clue_en": "Relating to the ear",
+        "clue_hi": "कान सम्बन्धी"
+      },
+      {
+        "number": 6,
+        "direction": "down",
+        "row": 3,
+        "col": 2,
+        "length": 4,
+        "aksharas": [
+          "व",
+          "रु",
+          "णा",
+          "नी"
+        ],
+        "word": "वरुणानी",
+        "roman": "varunaanii",
+        "clue_en": "Varuṇa's wife",
+        "clue_hi": "वरुण की पत्नी"
+      },
+      {
+        "number": 7,
+        "direction": "across",
+        "row": 6,
+        "col": 0,
+        "length": 4,
+        "aksharas": [
+          "अ",
+          "वि",
+          "नी",
+          "त"
+        ],
+        "word": "अविनीत",
+        "roman": "aviniita",
+        "clue_en": "Immodest, ill-bred, unmannered",
+        "clue_hi": "विनयशून्य, दुःशील"
+      },
+      {
+        "number": 8,
+        "direction": "down",
+        "row": 6,
+        "col": 1,
+        "length": 3,
+        "aksharas": [
+          "वि",
+          "दि",
+          "श्"
+        ],
+        "word": "विदिश्",
+        "roman": "vidish",
+        "clue_en": "An intermediate point of the compass",
+        "clue_hi": "दो दिशाओं का मध्यवर्ती बिन्दु"
+      }
+    ],
+    "id": "cw0009"
+  },
+  {
+    "rows": 6,
+    "cols": 8,
+    "words": [
+      {
+        "number": 1,
+        "direction": "down",
+        "row": 0,
+        "col": 4,
+        "length": 3,
+        "aksharas": [
+          "म",
+          "क",
+          "री"
+        ],
+        "word": "मकरी",
+        "roman": "makarii",
+        "clue_en": "The female of a crocodile. -Comp. -पत्रम्, -लेखा the mark of a Makarī on the face of Lakṣmī.-प्रस्थः N. of a town",
+        "clue_hi": "मादा घडियाल"
+      },
+      {
+        "number": 2,
+        "direction": "down",
+        "row": 0,
+        "col": 6,
+        "length": 3,
+        "aksharas": [
+          "आ",
+          "रा",
+          "त्"
+        ],
+        "word": "आरात्",
+        "roman": "aaraat",
+        "clue_en": "Near, in the vicinity of",
+        "clue_hi": "निकट, के पास"
+      },
+      {
+        "number": 2,
+        "direction": "across",
+        "row": 0,
+        "col": 6,
+        "length": 2,
+        "aksharas": [
+          "आ",
+          "नी"
+        ],
+        "word": "आनी",
+        "roman": "aanii",
+        "clue_en": "To bring, fetch",
+        "clue_hi": "लाना, जाकर लाना"
+      },
+      {
+        "number": 3,
+        "direction": "down",
+        "row": 2,
+        "col": 1,
+        "length": 3,
+        "aksharas": [
+          "मे",
+          "टु",
+          "ला"
+        ],
+        "word": "मेटुला",
+        "roman": "metulaa",
+        "clue_en": "The myrobalan tree",
+        "clue_hi": "आँवले का पेड़"
+      },
+      {
+        "number": 4,
+        "direction": "down",
+        "row": 2,
+        "col": 3,
+        "length": 3,
+        "aksharas": [
+          "पु",
+          "ष्पि",
+          "का"
+        ],
+        "word": "पुष्पिका",
+        "roman": "pushpikaa",
+        "clue_en": "The tartar of the teeth",
+        "clue_hi": "दांतो पर जमी हुई मैल"
+      },
+      {
+        "number": 4,
+        "direction": "across",
+        "row": 2,
+        "col": 3,
+        "length": 4,
+        "aksharas": [
+          "पु",
+          "री",
+          "त",
+          "त्"
+        ],
+        "word": "पुरीतत्",
+        "roman": "puriitat",
+        "clue_en": "A particular intestine near the heart",
+        "clue_hi": "हृदय के पास की एक विशेष अंतड़ी"
+      },
+      {
+        "number": 5,
+        "direction": "across",
+        "row": 4,
+        "col": 0,
+        "length": 4,
+        "aksharas": [
+          "कु",
+          "ला",
+          "यि",
+          "का"
+        ],
+        "word": "कुलायिका",
+        "roman": "kulaayikaa",
+        "clue_en": "bird-cage, an aviary, dove-cot",
+        "clue_hi": "पक्षियों का पिंजड़ा, चिड़ियाघर, कबूतरखाना, दड़बा"
+      },
+      {
+        "number": 5,
+        "direction": "down",
+        "row": 4,
+        "col": 0,
+        "length": 2,
+        "aksharas": [
+          "कु",
+          "ट्ट"
+        ],
+        "word": "कुट्ट",
+        "roman": "kutta",
+        "clue_en": "Dividing, cutting",
+        "clue_hi": "काटना, बाँटना"
+      }
+    ],
+    "id": "cw0010"
+  },
+  {
+    "rows": 8,
+    "cols": 6,
+    "words": [
+      {
+        "number": 1,
+        "direction": "down",
+        "row": 0,
+        "col": 4,
+        "length": 4,
+        "aksharas": [
+          "कौ",
+          "श",
+          "लि",
+          "का"
+        ],
+        "word": "कौशलिका",
+        "roman": "kaushalikaa",
+        "clue_en": "कौशली 1 A present, an offering",
+        "clue_hi": "उपहार, चढ़ावा"
+      },
+      {
+        "number": 2,
+        "direction": "across",
+        "row": 1,
+        "col": 2,
+        "length": 3,
+        "aksharas": [
+          "ओ",
+          "प",
+          "श"
+        ],
+        "word": "ओपश",
+        "roman": "opasha",
+        "clue_en": "Pillow, cushion",
+        "clue_hi": "तकिया,सहारा,अवलम्बन"
+      },
+      {
+        "number": 3,
+        "direction": "down",
+        "row": 3,
+        "col": 3,
+        "length": 3,
+        "aksharas": [
+          "ऐ",
+          "ष्टि",
+          "क"
+        ],
+        "word": "ऐष्टिक",
+        "roman": "aishtika",
+        "clue_en": "Sacrificial, ceremonial",
+        "clue_hi": "यज्ञसम्बन्धी, संस्कार विषयक"
+      },
+      {
+        "number": 3,
+        "direction": "across",
+        "row": 3,
+        "col": 3,
+        "length": 3,
+        "aksharas": [
+          "ऐ",
+          "का",
+          "त्म्य"
+        ],
+        "word": "ऐकात्म्य",
+        "roman": "aikaatmya",
+        "clue_en": "Unity, unity of soul",
+        "clue_hi": "एकता, आत्मा की एकता"
+      },
+      {
+        "number": 4,
+        "direction": "down",
+        "row": 4,
+        "col": 0,
+        "length": 2,
+        "aksharas": [
+          "सि",
+          "प्रा"
+        ],
+        "word": "सिप्रा",
+        "roman": "sipraa",
+        "clue_en": "A woman's zone or girdle",
+        "clue_hi": "स्त्री की करधनी या तगड़ी"
+      },
+      {
+        "number": 5,
+        "direction": "across",
+        "row": 5,
+        "col": 0,
+        "length": 4,
+        "aksharas": [
+          "प्रा",
+          "सू",
+          "ति",
+          "क"
+        ],
+        "word": "प्रासूतिक",
+        "roman": "praasuutika",
+        "clue_en": "Relating to delivery or childbirth",
+        "clue_hi": "प्रसव से संबंध रखने वाला, बच्चे के जन्म से संबद्ध"
+      },
+      {
+        "number": 6,
+        "direction": "down",
+        "row": 5,
+        "col": 2,
+        "length": 3,
+        "aksharas": [
+          "ति",
+          "र",
+          "स्"
+        ],
+        "word": "तिरस्",
+        "roman": "tiras",
+        "clue_en": "Crookedly, obliquely, awry",
+        "clue_hi": "बांकेपन से, टेढ़ेपन से, तिरछेपन से"
+      },
+      {
+        "number": 7,
+        "direction": "across",
+        "row": 7,
+        "col": 0,
+        "length": 3,
+        "aksharas": [
+          "रो",
+          "चि",
+          "स्"
+        ],
+        "word": "रोचिस्",
+        "roman": "rochis",
+        "clue_en": "Light, splendour, brightness, flame",
+        "clue_hi": "प्रकाश, आभा, उज्ज्वलता, ज्वाला"
+      }
+    ],
+    "id": "cw0011"
+  }
+]
