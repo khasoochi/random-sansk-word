@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}अक्षर-Wordle{% endblock %}
+{% block content %}
+<header class="page-header">
+    <h1 class="sanskrit-title small">अक्षर-वर्डल</h1>
+    <p class="description">Guess the Sanskrit word one <strong>akshara</strong> (syllable) at a time — not one letter, since Devanagari conjuncts and vowel signs form a single unit.</p>
+</header>
+
+<div class="game-hint-box">
+    <div><span class="hint-tag">EN</span> <span id="hintEn">Loading…</span></div>
+    <div><span class="hint-tag">HI</span> <span id="hintHi" class="hindi-text"></span></div>
+</div>
+
+<div id="wordleMessage" class="game-message"></div>
+<div id="wordleBoard" class="wordle-board"></div>
+
+<div class="game-controls">
+    <button id="submitGuess" class="btn-primary">Submit Guess</button>
+    <button id="giveUp" class="btn-secondary">Give Up</button>
+    <button id="newWordle" class="btn-secondary">New Word</button>
+</div>
+
+<div id="devkeyboard" class="devkeyboard-container"></div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/devkeyboard.js') }}"></script>
+<script src="{{ url_for('static', filename='js/wordle.js') }}"></script>
+{% endblock %}

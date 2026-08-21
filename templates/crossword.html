@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Crossword — शब्द-जाल{% endblock %}
+{% block content %}
+<header class="page-header">
+    <h1 class="sanskrit-title small">शब्द-जाल (Crossword)</h1>
+    <p class="description">Click a cell, then use the keyboard below to type its akshara. Clues are based on meanings, not the word itself.</p>
+</header>
+
+<div id="crosswordMessage" class="game-message"></div>
+
+<div class="crossword-layout">
+    <div class="crossword-grid-wrap">
+        <div id="crosswordGrid" class="crossword-grid"></div>
+        <div class="game-controls">
+            <button id="checkCrossword" class="btn-primary">Check</button>
+            <button id="giveUpCrossword" class="btn-secondary">Give Up</button>
+            <button id="newCrossword" class="btn-secondary">New Puzzle</button>
+        </div>
+        <div id="devkeyboard" class="devkeyboard-container"></div>
+    </div>
+    <div class="crossword-clues">
+        <div class="clue-column">
+            <h3>Across</h3>
+            <ul id="acrossClues"></ul>
+        </div>
+        <div class="clue-column">
+            <h3>Down</h3>
+            <ul id="downClues"></ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/devkeyboard.js') }}"></script>
+<script src="{{ url_for('static', filename='js/crossword.js') }}"></script>
+{% endblock %}

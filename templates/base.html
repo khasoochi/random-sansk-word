@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>{% block title %}संस्कृत शब्दकोश{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <nav class="topnav">
+        <div class="topnav-inner">
+            <a href="{{ url_for('index') }}" class="brand">
+                <span class="brand-deva">शब्दकोश</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="{{ url_for('index') }}" class="{{ 'active' if active == 'home' else '' }}">Home</a>
+                <a href="{{ url_for('search_page') }}" class="{{ 'active' if active == 'search' else '' }}">Search</a>
+                <a href="{{ url_for('learn_page') }}" class="{{ 'active' if active == 'learn' else '' }}">Learn</a>
+                <a href="{{ url_for('wordle_page') }}" class="{{ 'active' if active == 'wordle' else '' }}">Wordle</a>
+                <a href="{{ url_for('scramble_page') }}" class="{{ 'active' if active == 'scramble' else '' }}">Scramble</a>
+                <a href="{{ url_for('crossword_page') }}" class="{{ 'active' if active == 'crossword' else '' }}">Crossword</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <p>आप्टे संस्कृत–हिन्दी–अंग्रेज़ी शब्दकोश (Apte Dictionary, Babylon format)</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/nav.js') }}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

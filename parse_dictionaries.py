@@ -11,25 +11,56 @@ from collections import defaultdict
 
 
 def extract_gender(hindi_entry):
-    """Extract gender information from Hindi dictionary entry."""
-    gender_map = {
-        'पुं*': 'masculine',
-        'पुं': 'masculine',
-        'स्त्री*': 'feminine',
-        'स्त्री': 'feminine',
-        'नपुं*': 'neuter',
-        'नपुं': 'neuter',
-        'वि*': 'adjective',
-        'वि': 'adjective',
-        'अव्य*': 'indeclinable',
-        'अव्य': 'indeclinable',
-        'क्रि*वि*': 'adverb',
-    }
+    """Extract gender information from Hindi dictionary entry.
 
-    for marker, gender in gender_map.items():
+    Order matters: more specific multi-token markers (e.g. 'क्रि*वि*' for
+    adverb) must be checked before the shorter markers they contain as a
+    substring (e.g. 'वि*' for adjective), or the shorter one wins wrongly.
+    """
+    gender_map = [
+        ('क्रि*वि*', 'adverb'),
+        ('पुं*', 'masculine'),
+        ('पुं', 'masculine'),
+        ('स्त्री*', 'feminine'),
+        ('स्त्री', 'feminine'),
+        ('नपुं*', 'neuter'),
+        ('नपुं', 'neuter'),
+        ('अव्य*', 'indeclinable'),
+        ('अव्य', 'indeclinable'),
+        ('वि*', 'adjective'),
+        ('वि', 'adjective'),
+    ]
+
+    for marker, gender in gender_map:
         if marker in hindi_entry:
             return gender
     return 'unknown'
+
+
+def extract_hindi_gloss(body):
+    """
+    Extract just the Hindi gloss from a Hindi dictionary entry body, e.g.:
+      'अंशः<br>पुं*\tH1\t-\tNP\tअंश्+अच्<br>"हिस्सा, भाग, टुकड़ा"'
+    -> 'हिस्सा, भाग, टुकड़ा'
+
+    The babylon fields are tab-separated: headword+declension, H-code,
+    cross-ref/compound-split, grammatical category, etymology<br>gloss.
+    Everything except the actual gloss (after the last <br>) is internal
+    dictionary bookkeeping that shouldn't be shown to users or used as a
+    puzzle hint (the etymology reuses the word's own root, which would
+    spoil the answer).
+    """
+    fields = body.split('\t')
+    last_field = fields[-1] if len(fields) >= 5 else body
+
+    if '<br>' in last_field:
+        gloss = last_field.rsplit('<br>', 1)[-1]
+    else:
+        gloss = last_field
+
+    gloss = clean_text(gloss)
+    gloss = gloss.strip('"').strip()
+    return gloss
 
 
 def clean_text(text):
@@ -117,10 +148,11 @@ def parse_hindi_dictionary(filepath):
         # Extract gender
         gender = extract_gender(full_entry)
 
-        # Extract Hindi meaning
-        hindi_meaning = clean_text(full_entry)
+        # Extract just the Hindi gloss (strip dictionary-internal codes,
+        # headword restatement, and etymology -- see extract_hindi_gloss).
+        hindi_meaning = extract_hindi_gloss(full_entry)
 
-        if headword:
+        if headword and hindi_meaning:
             if headword not in entries:
                 entries[headword] = {
                     'gender': gender,

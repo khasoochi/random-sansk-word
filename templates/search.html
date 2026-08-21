@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Search — संस्कृत शब्दकोश{% endblock %}
+{% block content %}
+<header class="page-header">
+    <h1 class="sanskrit-title small">शब्द खोज</h1>
+    <p class="description">Search in Devanagari or transliteration (e.g. type "dharma" or "धर्म"). Enable regex to find similar/pattern-matching words.</p>
+</header>
+
+<div class="search-panel">
+    <div class="search-box-wrap">
+        <input type="text" id="searchInput" class="search-input" placeholder="धर्म / dharma / धर्.*" autocomplete="off" />
+        <div id="suggestions" class="suggestions-dropdown"></div>
+    </div>
+    <label class="checkbox-label">
+        <input type="checkbox" id="regexToggle" />
+        Regex search <span class="hint-tip">(find similar words, e.g. <code>^धर्म</code> or <code>.*ईश्वर.*</code>)</span>
+    </label>
+    <div class="stats" id="searchStats"></div>
+</div>
+
+<div id="loading" class="loading" style="display: none;">
+    <div class="spinner"></div>
+    <p>Searching...</p>
+</div>
+
+<div id="results" class="results-container"></div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/search.js') }}"></script>
+{% endblock %}

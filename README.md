@@ -1,262 +1,174 @@
-# Random Sanskrit Word Generator
+# संस्कृत शब्दकोश — Sanskrit Dictionary & Word Games
 
-A beautiful Flask web application that generates random Sanskrit words from the Apte Dictionary with their gender, English meanings, and Hindi meanings.
+A Flask web app built on the Apte Sanskrit–English–Hindi dictionary: search
+words (Devanagari, transliteration, or regex), flip through flashcards, and
+play three Devanagari-first word games — Wordle, Scramble, and Crossword —
+all built on **aksharas** (orthographic syllables) rather than raw Unicode
+characters, since Devanagari is an abugida and a single glyph is rarely a
+meaningful "letter" on its own.
 
 ## Features
 
-- 🎲 Generate random Sanskrit words (1-100 at a time)
-- 🌐 Dual language support: English and Hindi meanings
-- 📖 18,051 Sanskrit words from authentic Apte Dictionary
-- 📊 Gender classification (Masculine, Feminine, Neuter, Adjective, etc.)
-- 🎨 Beautiful, responsive UI with smooth animations
-- 📱 Mobile-friendly design
-- 🔍 Search functionality (coming soon)
-- 📊 Dictionary statistics
+- 🔍 **Search** — by Devanagari, transliteration ("dharma" finds धर्म), or
+  regex (e.g. `^धर्म` or `.*ईश्वर.*`), with live autocomplete suggestions.
+- 📖 **Learn** — flashcards: tap to flip between the word and its meanings.
+- 🎲 **Random Words** — generate a batch of 1–100 random words at once.
+- 🀄 **अक्षर-Wordle** — guess the word one akshara at a time, with
+  green/yellow/gray feedback, using a virtual Devanagari keyboard.
+- 🔤 **Word Scramble** — tap shuffled aksharas back into the right order.
+- 🧩 **Crossword** — small grids of intersecting words built from shared
+  aksharas, clued by meaning (never by the word itself).
+- 🧹 **Cleaned cross-references** — "See XYZ" (English) / "दे* XYZ" (Hindi)
+  are resolved to XYZ's actual meaning instead of leaving a dead-end pointer.
+- 📱 Mobile-friendly, single CSS/JS stack, no build step.
 
 ## Dictionary Source
 
-This application uses the Apte Sanskrit Dictionary in Babylon format:
-- **apte-sa.babylon**: Sanskrit-English dictionary
-- **apte-hi.babylon**: Sanskrit-Hindi dictionary
+- `apte-sa.babylon` — Sanskrit-English dictionary
+- `apte-hi.babylon` — Sanskrit-Hindi dictionary
+
+## Data Pipeline
+
+Three scripts turn the raw Babylon files into everything the app serves.
+Re-run them in order whenever the source dictionaries change:
+
+```bash
+python3 parse_dictionaries.py   # babylon -> sanskrit_dictionary.json/.csv
+python3 enrich_dictionary.py    # + transliteration, + cross-ref resolution
+python3 generate_puzzles.py     # -> puzzles/{wordle,scramble,crossword}.json
+```
+
+- **`parse_dictionaries.py`** merges the two babylon files on shared
+  headwords (18,051 words have entries in both), extracts gender, and pulls
+  just the Hindi *gloss* out of each entry (dictionary-internal codes like
+  `H1 - NP` and the etymology are discarded — see `extract_hindi_gloss`).
+- **`enrich_dictionary.py`** adds a `roman` transliteration field per word
+  (plain Latin, no diacritics — `dharma`, not `dharmaḥ`) and resolves
+  "See X" / "दे* X" cross-references to X's actual meaning, when X is also
+  in the merged dictionary.
+- **`generate_puzzles.py`** builds the game content (see below). Run it
+  again with different `--wordle/--scramble/--crossword` counts or
+  `--seed` to generate more puzzles later — see "Generating More Puzzles".
+- **`devanagari_utils.py`** is the shared library both scripts (and
+  `app.py`) depend on: `split_aksharas()` (syllable segmentation),
+  `transliterate()`, and the hint-cleaning helpers that strip a gloss's
+  leading headword/etymology so puzzle hints don't spoil the answer.
 
 ## Installation
 
-### Prerequisites
-
-- Python 3.7 or higher
-- pip (Python package manager)
-
-### Setup
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd random-sansk-word
-```
-
-2. Install dependencies:
 ```bash
 pip install -r requirements.txt
-```
-
-3. Parse the dictionary files (first time only):
-```bash
 python3 parse_dictionaries.py
-```
-
-This will generate:
-- `sanskrit_dictionary.json` - Complete dictionary in JSON format
-- `sanskrit_dictionary.csv` - Dictionary in CSV format
-
-## Running the Application
-
-Start the Flask server:
-```bash
+python3 enrich_dictionary.py
+python3 generate_puzzles.py
 python3 app.py
 ```
 
-The application will be available at: `http://localhost:5000`
+The app runs at `http://localhost:5000`. `sanskrit_dictionary.json` and
+`puzzles/*.json` are committed to the repo so the app also runs as-is
+without regenerating anything (only needed if you change the source data
+or want more/different puzzles).
 
-## Deployment
+## Why aksharas, not characters?
 
-### Deploying to Vercel
+Devanagari is an abugida: a consonant carries an inherent vowel unless
+modified by a vowel sign, and consonants can stack into conjuncts via a
+halant (e.g. र् + म → र्म). A "letter" a player types or guesses has to be
+that whole cluster — क, धर्म's र्म, कृ — not a lone matra like "ि", which is
+meaningless without a base consonant. `split_aksharas()` in
+`devanagari_utils.py` implements this segmentation, and every game
+(Wordle scoring, Scramble tiles, Crossword cells) operates on its output.
+The on-screen keyboard (`static/js/devkeyboard.js`) lets players compose
+an akshara from vowels/consonants/matras/halant one tap at a time, so the
+games work without needing a native Devanagari input method.
 
-This app is configured for easy deployment to Vercel:
+## Generating More Puzzles
 
-1. **Push to GitHub** (already done if you cloned this repo)
+`generate_puzzles.py` is reusable — it's not a one-off script:
 
-2. **Import to Vercel**:
-   - Go to [vercel.com](https://vercel.com)
-   - Click "Import Project"
-   - Select your GitHub repository
-   - Vercel will automatically detect the Python/Flask setup
-
-3. **Configuration**:
-   - The `vercel.json` file is already configured
-   - No environment variables needed
-   - The dictionary JSON (20MB) is included in the repository
-
-4. **Deploy**:
-   - Click "Deploy"
-   - Vercel will build and deploy your app
-   - You'll get a live URL like: `your-app.vercel.app`
-
-5. **Health Check**:
-   - Visit `/health` endpoint to verify deployment
-   - Check dictionary loaded status and file system info
-
-**Note**: The `sanskrit_dictionary.json` file (20MB) is committed to the repository for Vercel deployment. If you need to regenerate it, run `python3 parse_dictionaries.py`.
-
-### Troubleshooting Vercel Deployment
-
-If the deployment fails:
-1. Check the `/health` endpoint for diagnostic information
-2. Review Vercel build logs for errors
-3. Ensure the dictionary JSON file is present in the deployment
-4. Verify Python version compatibility (Python 3.9+ recommended)
-
-## Usage
-
-1. Open your web browser and navigate to `http://localhost:5000`
-2. Enter the number of random words you want to generate (1-100)
-3. Click "Generate Random Words"
-4. View the Sanskrit words with their:
-   - Sanskrit script
-   - Gender classification
-   - English meaning
-   - Hindi meaning (हिन्दी अर्थ)
-5. Click "Show all meanings" to see additional definitions
-
-## API Endpoints
-
-### Get Random Words
-```
-GET /api/random?count=5
+```bash
+python3 generate_puzzles.py --wordle 60 --scramble 60 --crossword 20 --seed 7
 ```
 
-Returns random Sanskrit words with meanings.
+It filters the dictionary for clean, spoiler-safe candidates (see
+`load_candidates`), then:
+- **Wordle**: picks words of 3–5 aksharas.
+- **Scramble**: picks words of 3–6 aksharas, shuffles them.
+- **Crossword**: greedily places words on a grid so they intersect at
+  shared aksharas (`try_build_one_crossword`), retrying with different
+  random seeds until enough puzzles hit the target word count.
 
-**Parameters:**
-- `count` (optional): Number of words to return (1-100, default: 1)
+Candidate hints are generated from the *cleaned* gloss
+(`clean_english_hint` / `clean_hindi_hint`), never the raw dictionary
+text, because raw entries lead with the headword's own etymology, which
+would give the answer away.
 
-**Response:**
-```json
-{
-  "success": true,
-  "count": 5,
-  "words": [
-    {
-      "sanskrit": "अग्नि",
-      "gender": "masculine",
-      "english_meaning": "Fire...",
-      "hindi_meaning": "अग्नि...",
-      "all_english_meanings": [...],
-      "all_hindi_meanings": [...]
-    }
-  ]
-}
-```
+## Puzzle Answer Security
 
-### Get Statistics
-```
-GET /api/stats
-```
-
-Returns dictionary statistics.
-
-**Response:**
-```json
-{
-  "total_words": 18051,
-  "gender_distribution": {
-    "masculine": 8234,
-    "feminine": 4123,
-    "neuter": 3456,
-    ...
-  }
-}
-```
-
-### Search Words
-```
-GET /api/search?q=अग्नि
-```
-
-Search for Sanskrit words by headword.
-
-**Parameters:**
-- `q` (required): Search query
+Puzzle solutions are **never sent to the browser**. `/api/games/*/new`
+returns only the puzzle id, length/shape, and meaning-based hints; guesses
+are checked server-side (`/api/games/*/guess` or `/check`), and the
+solution is only revealed via an explicit `/reveal` call (the "Give Up"
+button).
 
 ## Project Structure
 
 ```
 random-sansk-word/
-├── app.py                      # Flask application
-├── parse_dictionaries.py       # Dictionary parser script
-├── requirements.txt            # Python dependencies
-├── README.md                   # This file
-├── apte-sa.babylon            # Sanskrit-English dictionary
-├── apte-hi.babylon            # Sanskrit-Hindi dictionary
-├── sanskrit_dictionary.json    # Processed dictionary (JSON)
-├── sanskrit_dictionary.csv     # Processed dictionary (CSV)
+├── app.py                     # Flask app: pages + all APIs
+├── devanagari_utils.py        # akshara segmentation, transliteration, hint cleaning
+├── parse_dictionaries.py      # babylon -> sanskrit_dictionary.json/.csv
+├── enrich_dictionary.py       # + roman field, + cross-reference resolution
+├── generate_puzzles.py        # -> puzzles/{wordle,scramble,crossword}.json
+├── puzzles/                   # generated puzzle content (server-side only)
+├── sanskrit_dictionary.json   # merged, enriched dictionary (18,051 words)
+├── sanskrit_dictionary.csv    # same, as CSV
+├── apte-sa.babylon            # source: Sanskrit-English
+├── apte-hi.babylon            # source: Sanskrit-Hindi
 ├── templates/
-│   └── index.html             # Main HTML template
+│   ├── base.html              # nav + shared layout
+│   ├── index.html             # dashboard home
+│   ├── random.html / search.html / learn.html
+│   └── wordle.html / scramble.html / crossword.html
 └── static/
-    ├── css/
-    │   └── style.css          # Styles
+    ├── css/style.css
     └── js/
-        └── app.js             # Frontend JavaScript
+        ├── devkeyboard.js     # shared virtual Devanagari keyboard
+        ├── nav.js / home.js / random.js / search.js / learn.js
+        └── wordle.js / scramble.js / crossword.js
 ```
 
-## Technologies Used
+## API Reference
 
-- **Backend**: Python Flask
-- **Frontend**: HTML5, CSS3, Vanilla JavaScript
-- **Fonts**:
-  - Noto Sans Devanagari (for Sanskrit/Hindi text)
-  - Poppins (for English text)
-- **Data Format**: JSON, CSV
+### Dictionary
+- `GET /api/random?count=5` — random words.
+- `GET /api/stats` — total word count + gender distribution.
+- `GET /api/search?q=dharma&regex=0` — search by Devanagari substring,
+  transliteration substring, or (if `regex=1`) a Python regex tested
+  against both. Returns 400 with a message on invalid regex.
+- `GET /api/suggest?q=dhar&limit=8` — autocomplete: prefix matches first,
+  then substring matches, `{sanskrit, roman}` pairs only.
 
-## Features Explanation
+### Games
+- `GET /api/games/wordle/new[?length=3]`, `POST /api/games/wordle/guess`
+  `{id, guess: [akshara, ...]}` → `{feedback: [correct|present|absent, ...], solved}`,
+  `GET /api/games/wordle/<id>/reveal`.
+- `GET /api/games/scramble/new`, `POST /api/games/scramble/check`
+  `{id, order: [akshara, ...]}` → `{correct}`,
+  `GET /api/games/scramble/<id>/reveal`.
+- `GET /api/games/crossword/new` → grid shape + clues (no letters),
+  `POST /api/games/crossword/check` `{id, cells: {"r,c": akshara}}` →
+  `{results: {"r,c": bool}, solved}`,
+  `GET /api/games/crossword/<id>/reveal`.
 
-### Gender Classification
+## Deployment (Vercel)
 
-Words are classified by gender:
-- **Masculine** (पुं) - Blue badge
-- **Feminine** (स्त्री) - Red badge
-- **Neuter** (नपुं) - Green badge
-- **Adjective** (वि) - Orange badge
-- **Indeclinable** (अव्य) - Purple badge
-- **Adverb** (क्रि.वि) - Teal badge
-
-### Dictionary Processing
-
-The parser script (`parse_dictionaries.py`) performs:
-1. Extracts headwords and definitions from Babylon format
-2. Identifies gender markers in Hindi dictionary
-3. Merges entries from both dictionaries
-4. Filters entries to include only those with both English and Hindi meanings
-5. Exports to JSON and CSV formats
-
-## Data Statistics
-
-- **Total Entries**: 18,051 Sanskrit words
-- **Source**: Apte Dictionary (Babylon format)
-- **Languages**: Sanskrit, English, Hindi
-- **File Sizes**:
-  - Sanskrit-English: ~19 MB
-  - Sanskrit-Hindi: ~17 MB
-
-## Development
-
-To modify the application:
-
-1. **Backend changes**: Edit `app.py`
-2. **Frontend changes**:
-   - HTML: Edit `templates/index.html`
-   - CSS: Edit `static/css/style.css`
-   - JavaScript: Edit `static/js/app.js`
-3. **Dictionary parsing**: Edit `parse_dictionaries.py`
+`vercel.json` is already configured for the Python/Flask runtime. Push to
+GitHub and import the repo in Vercel — no environment variables needed.
+`sanskrit_dictionary.json` and `puzzles/*.json` are committed so the
+deployed app has everything it needs without a build step. `/health`
+reports dictionary/puzzle load status for debugging a failed deploy.
 
 ## License
 
-This application uses the Apte Dictionary data. Please ensure compliance with the dictionary's usage terms.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## Future Enhancements
-
-- [ ] Advanced search functionality
-- [ ] Filter by gender/word type
-- [ ] Bookmark favorite words
-- [ ] Export word lists to PDF
-- [ ] Audio pronunciation
-- [ ] Word of the day feature
-- [ ] Etymology information
-- [ ] Example sentences
-
-## Support
-
-For issues or questions, please open an issue on the GitHub repository.
+Uses the Apte Dictionary data — ensure compliance with its usage terms.

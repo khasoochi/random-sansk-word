@@ -1,0 +1,776 @@
+[
+  {
+    "id": "sc0000",
+    "word": "आक्षेपण",
+    "roman": "aakshepana",
+    "aksharas": [
+      "आ",
+      "क्षे",
+      "प",
+      "ण"
+    ],
+    "scrambled": [
+      "क्षे",
+      "ण",
+      "आ",
+      "प"
+    ],
+    "gender": "masculine",
+    "hint_en": "Throwing, tossing",
+    "hint_hi": "फेंकना, उछालना"
+  },
+  {
+    "id": "sc0001",
+    "word": "परिनिष्ठा",
+    "roman": "parinishthaa",
+    "aksharas": [
+      "प",
+      "रि",
+      "नि",
+      "ष्ठा"
+    ],
+    "scrambled": [
+      "नि",
+      "रि",
+      "प",
+      "ष्ठा"
+    ],
+    "gender": "masculine",
+    "hint_en": "Complete knowledge or acquaintance (of anything)",
+    "hint_hi": "(किसी वस्तु का) पूरा ज्ञान या परिचय"
+  },
+  {
+    "id": "sc0002",
+    "word": "बंहीयस्",
+    "roman": "bamhiiyas",
+    "aksharas": [
+      "बं",
+      "ही",
+      "य",
+      "स्"
+    ],
+    "scrambled": [
+      "ही",
+      "बं",
+      "स्",
+      "य"
+    ],
+    "gender": "adjective",
+    "hint_en": "More numerous or abundant, much more, exceeding",
+    "hint_hi": "अपेक्षाकृत अधिक, बहुत ज्यादा, अपेक्षाकृत बहुसंख्यक"
+  },
+  {
+    "id": "sc0003",
+    "word": "कचाकचि",
+    "roman": "kachaakachi",
+    "aksharas": [
+      "क",
+      "चा",
+      "क",
+      "चि"
+    ],
+    "scrambled": [
+      "चा",
+      "चि",
+      "क",
+      "क"
+    ],
+    "gender": "indeclinable",
+    "hint_en": "'Hair against hair', (fighting by) pulling each other's hair",
+    "hint_hi": "’बाल के बदले’ एक दूसरे के बाल पकड़कर युद्ध करना"
+  },
+  {
+    "id": "sc0004",
+    "word": "उपवसथ",
+    "roman": "upavasatha",
+    "aksharas": [
+      "उ",
+      "प",
+      "व",
+      "स",
+      "थ"
+    ],
+    "scrambled": [
+      "थ",
+      "व",
+      "प",
+      "स",
+      "उ"
+    ],
+    "gender": "masculine",
+    "hint_en": "A village",
+    "hint_hi": "गाँव"
+  },
+  {
+    "id": "sc0005",
+    "word": "रमठ",
+    "roman": "ramatha",
+    "aksharas": [
+      "र",
+      "म",
+      "ठ"
+    ],
+    "scrambled": [
+      "र",
+      "ठ",
+      "म"
+    ],
+    "gender": "masculine",
+    "hint_en": "Asa Fœtida (हिङ्गु). -Comp. -ध्वनिः Asa Fœtida",
+    "hint_hi": "हींग"
+  },
+  {
+    "id": "sc0006",
+    "word": "चाक्रिक",
+    "roman": "chaakrika",
+    "aksharas": [
+      "चा",
+      "क्रि",
+      "क"
+    ],
+    "scrambled": [
+      "क",
+      "चा",
+      "क्रि"
+    ],
+    "gender": "adjective",
+    "hint_en": "See चाक above",
+    "hint_hi": "चक्र से किया जाने वाला"
+  },
+  {
+    "id": "sc0007",
+    "word": "उपरूपक",
+    "roman": "uparuupaka",
+    "aksharas": [
+      "उ",
+      "प",
+      "रू",
+      "प",
+      "क"
+    ],
+    "scrambled": [
+      "रू",
+      "प",
+      "क",
+      "उ",
+      "प"
+    ],
+    "gender": "masculine",
+    "hint_en": "A drama of an inferior class, of which 18 kinds are enumerated",
+    "hint_hi": "घटिया प्रकार का नाटक"
+  },
+  {
+    "id": "sc0008",
+    "word": "विचर्मन्",
+    "roman": "vicharman",
+    "aksharas": [
+      "वि",
+      "च",
+      "र्म",
+      "न्"
+    ],
+    "scrambled": [
+      "वि",
+      "र्म",
+      "न्",
+      "च"
+    ],
+    "gender": "adjective",
+    "hint_en": "Shieldless",
+    "hint_hi": "कवचहीन,जिसके पास जिरह बख्तर न हो"
+  },
+  {
+    "id": "sc0009",
+    "word": "उन्मृद्",
+    "roman": "unmrid",
+    "aksharas": [
+      "उ",
+      "न्मृ",
+      "द्"
+    ],
+    "scrambled": [
+      "न्मृ",
+      "उ",
+      "द्"
+    ],
+    "gender": "unknown",
+    "hint_en": "To rub, to do massage",
+    "hint_hi": "मसलना, मालिश करना"
+  },
+  {
+    "id": "sc0010",
+    "word": "कोटिर",
+    "roman": "kotira",
+    "aksharas": [
+      "को",
+      "टि",
+      "र"
+    ],
+    "scrambled": [
+      "र",
+      "को",
+      "टि"
+    ],
+    "gender": "masculine",
+    "hint_en": "The hair collected on the forehead by ascetics in the shape of a horn",
+    "hint_hi": "सन्यासियों द्वारा मस्तक पर बनी सींग के रुप की बालों की चोटी"
+  },
+  {
+    "id": "sc0011",
+    "word": "दोहली",
+    "roman": "dohalii",
+    "aksharas": [
+      "दो",
+      "ह",
+      "ली"
+    ],
+    "scrambled": [
+      "ली",
+      "ह",
+      "दो"
+    ],
+    "gender": "feminine",
+    "hint_en": "The Aśoka tree",
+    "hint_hi": "अशोकवॄक्ष"
+  },
+  {
+    "id": "sc0012",
+    "word": "फेलुक",
+    "roman": "pheluka",
+    "aksharas": [
+      "फे",
+      "लु",
+      "क"
+    ],
+    "scrambled": [
+      "लु",
+      "फे",
+      "क"
+    ],
+    "gender": "masculine",
+    "hint_en": "The scrotum. ब",
+    "hint_hi": "अंडकोष, फोता, मुष्क"
+  },
+  {
+    "id": "sc0013",
+    "word": "अजन्य",
+    "roman": "ajanya",
+    "aksharas": [
+      "अ",
+      "ज",
+      "न्य"
+    ],
+    "scrambled": [
+      "न्य",
+      "अ",
+      "ज"
+    ],
+    "gender": "adjective",
+    "hint_en": "Not fit to be produced",
+    "hint_hi": "उत्पन्न होने के अयोग्य, मानव जाति के प्रतिकूल"
+  },
+  {
+    "id": "sc0014",
+    "word": "परिवृत",
+    "roman": "parivrita",
+    "aksharas": [
+      "प",
+      "रि",
+      "वृ",
+      "त"
+    ],
+    "scrambled": [
+      "त",
+      "वृ",
+      "प",
+      "रि"
+    ],
+    "gender": "adjective",
+    "hint_en": "Surrounded, encompassed, encircled, attended",
+    "hint_hi": "घिरा हुआ, परिवेष्टित, सेवित"
+  },
+  {
+    "id": "sc0015",
+    "word": "मर्षित",
+    "roman": "marshita",
+    "aksharas": [
+      "म",
+      "र्षि",
+      "त"
+    ],
+    "scrambled": [
+      "त",
+      "म",
+      "र्षि"
+    ],
+    "gender": "unknown",
+    "hint_en": "Endured, patiently borne or endured",
+    "hint_hi": "सहन किया हुआ, सबर के साथ हुआ"
+  },
+  {
+    "id": "sc0016",
+    "word": "प्रवर्तन",
+    "roman": "pravartana",
+    "aksharas": [
+      "प्र",
+      "व",
+      "र्त",
+      "न"
+    ],
+    "scrambled": [
+      "प्र",
+      "व",
+      "न",
+      "र्त"
+    ],
+    "gender": "masculine",
+    "hint_en": "Going on, moving forward",
+    "hint_hi": "चलते रहना, आगे बढ़ना"
+  },
+  {
+    "id": "sc0017",
+    "word": "वर्ष्मन्",
+    "roman": "varshman",
+    "aksharas": [
+      "व",
+      "र्ष्म",
+      "न्"
+    ],
+    "scrambled": [
+      "र्ष्म",
+      "व",
+      "न्"
+    ],
+    "gender": "masculine",
+    "hint_en": "Body, form",
+    "hint_hi": "शरीर, देह"
+  },
+  {
+    "id": "sc0018",
+    "word": "अभिपरिप्लुत",
+    "roman": "abhiparipluta",
+    "aksharas": [
+      "अ",
+      "भि",
+      "प",
+      "रि",
+      "प्लु",
+      "त"
+    ],
+    "scrambled": [
+      "त",
+      "प",
+      "अ",
+      "प्लु",
+      "भि",
+      "रि"
+    ],
+    "gender": "adjective",
+    "hint_en": "Overflowed, filled with, inundated",
+    "hint_hi": "डूबा हुआ,भरा हुआ,बाढ़ग्रस्त,उखड़ा हुआ,-शोक,क्रोध आदि से"
+  },
+  {
+    "id": "sc0019",
+    "word": "अवगुण",
+    "roman": "avaguna",
+    "aksharas": [
+      "अ",
+      "व",
+      "गु",
+      "ण"
+    ],
+    "scrambled": [
+      "ण",
+      "व",
+      "गु",
+      "अ"
+    ],
+    "gender": "masculine",
+    "hint_en": "A fault, defect, demerit",
+    "hint_hi": "अपराध, दोष, बुराई"
+  },
+  {
+    "id": "sc0020",
+    "word": "मञ्जिका",
+    "roman": "manyjikaa",
+    "aksharas": [
+      "म",
+      "ञ्जि",
+      "का"
+    ],
+    "scrambled": [
+      "ञ्जि",
+      "म",
+      "का"
+    ],
+    "gender": "feminine",
+    "hint_en": "A harlot, prostitute, courtezan",
+    "hint_hi": "वेश्या, बारांगना, बाजारु स्त्री, रंडी"
+  },
+  {
+    "id": "sc0021",
+    "word": "चोरितक",
+    "roman": "choritaka",
+    "aksharas": [
+      "चो",
+      "रि",
+      "त",
+      "क"
+    ],
+    "scrambled": [
+      "रि",
+      "क",
+      "त",
+      "चो"
+    ],
+    "gender": "masculine",
+    "hint_en": "Petty theft, larceny",
+    "hint_hi": "चोरी, चौर्य, स्तेय"
+  },
+  {
+    "id": "sc0022",
+    "word": "बलक",
+    "roman": "balaka",
+    "aksharas": [
+      "ब",
+      "ल",
+      "क"
+    ],
+    "scrambled": [
+      "ल",
+      "क",
+      "ब"
+    ],
+    "gender": "masculine",
+    "hint_en": "A dream. -कम् A mixture of treacle and milk",
+    "hint_hi": "स्वप्न"
+  },
+  {
+    "id": "sc0023",
+    "word": "प्रातिजनीन",
+    "roman": "praatijaniina",
+    "aksharas": [
+      "प्रा",
+      "ति",
+      "ज",
+      "नी",
+      "न"
+    ],
+    "scrambled": [
+      "न",
+      "ज",
+      "प्रा",
+      "नी",
+      "ति"
+    ],
+    "gender": "adjective",
+    "hint_en": "Suitable against an adversary",
+    "hint_hi": "शत्रु का मुकाबला करने करने के लिए उपयुक्त"
+  },
+  {
+    "id": "sc0024",
+    "word": "परिवृध्",
+    "roman": "parivridh",
+    "aksharas": [
+      "प",
+      "रि",
+      "वृ",
+      "ध्"
+    ],
+    "scrambled": [
+      "वृ",
+      "ध्",
+      "प",
+      "रि"
+    ],
+    "gender": "adjective",
+    "hint_en": "Ā. To grow up, increase. -Caus",
+    "hint_hi": "विकसित होना, बढ़ना, समृद्ध होना"
+  },
+  {
+    "id": "sc0025",
+    "word": "अलिङ्ग",
+    "roman": "alingga",
+    "aksharas": [
+      "अ",
+      "लि",
+      "ङ्ग"
+    ],
+    "scrambled": [
+      "लि",
+      "ङ्ग",
+      "अ"
+    ],
+    "gender": "adjective",
+    "hint_en": "Having no characteristic marks, having no marks",
+    "hint_hi": "जिसका कोई विशिष्ट चिह्न न हो , चिह्न रहित"
+  },
+  {
+    "id": "sc0026",
+    "word": "माध्यम",
+    "roman": "maadhyama",
+    "aksharas": [
+      "मा",
+      "ध्य",
+      "म"
+    ],
+    "scrambled": [
+      "म",
+      "ध्य",
+      "मा"
+    ],
+    "gender": "adjective",
+    "hint_en": "Belonging to the middle portion, central, middle, middlemost",
+    "hint_hi": "मध्यवर्ती अंश से संबद्ध, केन्द्रीय, मध्यवर्ती, बिल्कुल मध्य का"
+  },
+  {
+    "id": "sc0027",
+    "word": "अवश्यक",
+    "roman": "avashyaka",
+    "aksharas": [
+      "अ",
+      "व",
+      "श्य",
+      "क"
+    ],
+    "scrambled": [
+      "क",
+      "अ",
+      "व",
+      "श्य"
+    ],
+    "gender": "adjective",
+    "hint_en": "Necessary, inevitable, indispensable",
+    "hint_hi": "आवश्यक, अनिवार्य, अनुपेक्ष्य"
+  },
+  {
+    "id": "sc0028",
+    "word": "चान्द्रायण",
+    "roman": "chaandraayana",
+    "aksharas": [
+      "चा",
+      "न्द्रा",
+      "य",
+      "ण"
+    ],
+    "scrambled": [
+      "न्द्रा",
+      "य",
+      "ण",
+      "चा"
+    ],
+    "gender": "masculine",
+    "hint_en": "A religious observance or expiatory penance regulated by the moon's age (the period of its waxing and waning)",
+    "hint_hi": "एक धार्मिक व्रत या प्रायश्चित्तात्मक तपश्चर्या जो चन्द्रमा की वृद्धि व क्षय से विनियमित है"
+  },
+  {
+    "id": "sc0029",
+    "word": "प्रतितर",
+    "roman": "pratitara",
+    "aksharas": [
+      "प्र",
+      "ति",
+      "त",
+      "र"
+    ],
+    "scrambled": [
+      "र",
+      "त",
+      "प्र",
+      "ति"
+    ],
+    "gender": "masculine",
+    "hint_en": "An oarsman, a sailor",
+    "hint_hi": "डांड खेने वाला, मल्लाह या नाविक"
+  },
+  {
+    "id": "sc0030",
+    "word": "आसद्",
+    "roman": "aasad",
+    "aksharas": [
+      "आ",
+      "स",
+      "द्"
+    ],
+    "scrambled": [
+      "स",
+      "आ",
+      "द्"
+    ],
+    "gender": "unknown",
+    "hint_en": "To sit down or near (with acc. or loc.)",
+    "hint_hi": "नीचे बैठना, निकट बैठना"
+  },
+  {
+    "id": "sc0031",
+    "word": "अरोगत्व",
+    "roman": "arogatva",
+    "aksharas": [
+      "अ",
+      "रो",
+      "ग",
+      "त्व"
+    ],
+    "scrambled": [
+      "त्व",
+      "अ",
+      "रो",
+      "ग"
+    ],
+    "gender": "masculine",
+    "hint_en": "Healthiness",
+    "hint_hi": "रोग से मुक्त होने की स्थिति"
+  },
+  {
+    "id": "sc0032",
+    "word": "कम्पिल्ल",
+    "roman": "kampilla",
+    "aksharas": [
+      "क",
+      "म्पि",
+      "ल्ल"
+    ],
+    "scrambled": [
+      "म्पि",
+      "क",
+      "ल्ल"
+    ],
+    "gender": "masculine",
+    "hint_en": "= काम्पिल्ल q. v.",
+    "hint_hi": "एक वृक्ष का नाम"
+  },
+  {
+    "id": "sc0033",
+    "word": "गभीरिका",
+    "roman": "gabhiirikaa",
+    "aksharas": [
+      "ग",
+      "भी",
+      "रि",
+      "का"
+    ],
+    "scrambled": [
+      "रि",
+      "भी",
+      "का",
+      "ग"
+    ],
+    "gender": "feminine",
+    "hint_en": "A large drum with a deep sound",
+    "hint_hi": "गहरी आवाज वाला बड़ा ढोल"
+  },
+  {
+    "id": "sc0034",
+    "word": "देष्टव्य",
+    "roman": "deshtavya",
+    "aksharas": [
+      "दे",
+      "ष्ट",
+      "व्य"
+    ],
+    "scrambled": [
+      "दे",
+      "व्य",
+      "ष्ट"
+    ],
+    "gender": "adjective",
+    "hint_en": "To be pointed, shown or declared",
+    "hint_hi": "इंगित या संकेतित किये जाने के योग्य"
+  },
+  {
+    "id": "sc0035",
+    "word": "अन्यायिन्",
+    "roman": "anyaayin",
+    "aksharas": [
+      "अ",
+      "न्या",
+      "यि",
+      "न्"
+    ],
+    "scrambled": [
+      "अ",
+      "यि",
+      "न्या",
+      "न्"
+    ],
+    "gender": "adjective",
+    "hint_en": "Unjust, improper",
+    "hint_hi": "न्यायरहित, अनुचित"
+  },
+  {
+    "id": "sc0036",
+    "word": "मर्मरी",
+    "roman": "marmarii",
+    "aksharas": [
+      "म",
+      "र्म",
+      "री"
+    ],
+    "scrambled": [
+      "र्म",
+      "म",
+      "री"
+    ],
+    "gender": "feminine",
+    "hint_en": "A species of pine tree",
+    "hint_hi": "देवदारु का एक भेद"
+  },
+  {
+    "id": "sc0037",
+    "word": "समांसमीना",
+    "roman": "samaamsamiinaa",
+    "aksharas": [
+      "स",
+      "मां",
+      "स",
+      "मी",
+      "ना"
+    ],
+    "scrambled": [
+      "मां",
+      "ना",
+      "स",
+      "स",
+      "मी"
+    ],
+    "gender": "feminine",
+    "hint_en": "A cow bearing a calf every year",
+    "hint_hi": "वह गाय जो प्रतिवर्ष व्याती है और बछड़ा देती हैं"
+  },
+  {
+    "id": "sc0038",
+    "word": "बिभित्सा",
+    "roman": "bibhitsaa",
+    "aksharas": [
+      "बि",
+      "भि",
+      "त्सा"
+    ],
+    "scrambled": [
+      "बि",
+      "त्सा",
+      "भि"
+    ],
+    "gender": "feminine",
+    "hint_en": "A wish to break through, a desire to pierce or penetrate",
+    "hint_hi": "भेदने की इच्छा, बींधने की या छेद करने की इच्छा"
+  },
+  {
+    "id": "sc0039",
+    "word": "अव्याप्य",
+    "roman": "avyaapya",
+    "aksharas": [
+      "अ",
+      "व्या",
+      "प्य"
+    ],
+    "scrambled": [
+      "व्या",
+      "प्य",
+      "अ"
+    ],
+    "gender": "indeclinable",
+    "hint_en": "Not extending to the whole circumstances, not pervading the whole extent",
+    "hint_hi": "जो सारी स्थिति के लिए लागू न हो, समस्त विस्तार पर छाया हुआ न हो"
+  }
+]
